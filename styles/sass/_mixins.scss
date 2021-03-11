@@ -1,0 +1,9 @@
+@mixin lora($sizeValue, $lightenValue) {
+    font-size: $sizeValue;
+    color: lighten(#2E2E2E, $lightenValue);
+}
+
+@mixin raleway($sizeValue, $lightenValue) {
+    font-size: $sizeValue;
+    color: lighten(#2E2E2E, $lightenValue);
+}

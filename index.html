@@ -4,59 +4,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- add google fonts -->
     <!-- add fontawesome  -->
+    <script src='https://kit.fontawesome.com/fbc2e650be.js'></script>
     <title>Document</title>
 </head>
 <body>
     <!-- begin header -->
-    <header class="home">
+    <header>
         <!-- begin header wrapper -->
         <div class="wrapper__header">
             <h1>delicious</h1>
             <!-- navigation starts -->
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="nav__link"><a href=""></a></li>
-                    <li class="nav__link"><a href=""></a></li>
-                    <li class="nav__link"><a href=""></a></li>
-                    <li class="nav__link"><a href=""></a></li>
-                    <li class="nav__link"><a href=""></a></li>
-                    <li class="nav__link"><a href=""></a></li>
-                    <li class="nav__link"><a href=""><i class="fas fa-shopping-bag"></i></a></li>
-                    <li class="nav__link"><a href=""><i class="fas fa-search"></i></a></li>
-                    <li class="nav__link"><a href=""><i class="fas fa-bars"></i></a></li>
+                    <li class="nav__link"><a href="#">home</a></li>
+                    <li class="nav__link"><a href="#">about</a></li>
+                    <li class="nav__link"><a href="#">recipes</a></li>
+                    <li class="nav__link"><a href="#">nutrition</a></li>
+                    <li class="nav__link"><a href="blog.html">blog</a></li>
+                    <li class="nav__link"><a href="#">shop</a></li>
+                    <li class="nav__link"><a href="contact.html">contact</a></li>
+                    <li class="nav__link"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li class="nav__link"><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="nav__burger"><a href="#"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+            <!-- aria hidden icon for number 2 that should be green and next to the shopping bag -->
         </div>
     </header>
     <!-- begin main section -->
     <main>
         <!-- begin first content section -->
         <section class="section__first">
+            <div class="image__first">
+                <img src="./assets/home/home-2.jpeg" alt="A head of read leaf lettuce is in a ceramic dish, with small leaves surrounding it.">
+            </div>
             <!-- begin content wrapper -->
-            <div class="wrapper__first"></div>
+            <div class="wrapper__first">
+                <h2>Most Popular Recipes</h2>
+                <hr class="green__divider" />
+                <p class="text__dark">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettice lettice water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuc parsley jicama salsify.</p>
+                <button class="deep__green">View Recipes</button>
+            </div>
         </section>
         <!-- begin second content section -->
         <section class="section__second">
+            <div class="image__second">
+                <img src="./assets/home/home-3.jpeg" alt="A taco filled with cucumber, cilantro, and rare beef is propped up by lime slices and a tomatillo.">
+            </div>
             <!-- begin content wrapper -->
-            <div class="wrapper__second"></div>
+            <div class="wrapper__second">
+                <!-- float icons left of the list item they are contained in week1/day2/gallery layout exercise-->
+                <!-- .feature i,
+        .feature h2 {
+            float: left;
+        }
+
+        .feature p {
+            clear: both;
+            padding: 10px 5px;
+        } -->
+                <!-- display in a 2col3row grid -->
+                <div class="grid__menu">
+                    <div class="menu__feature clearfix">
+                        <i class="fas fa-lemon"></i>
+                        <h4>Vegetarian</h4>
+                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
+                    <div class="menu__feature clearfix">
+                        <i class="fas fa-utensils"></i>
+                        <h4>Appetizers</h4>
+                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
+                    <div class="menu__feature clearfix">
+                        <i class="fas fa-coffee"></i>
+                        <h4>Desserts</h4>
+                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
+                    <div class="menu__feature clearfix">
+                        <i class="fas fa-glass-martini"></i>
+                        <h4>Drinks</h4>
+                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
+                    <div class="menu__feature clearfix">
+                        <i class="fas fa-leaf"></i>
+                        <h4>Salads</h4>
+                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
+                    <div class="menu__feature clearfix">
+                        <i class="fas fa-utensil-spoon"></i>
+                        <h4>Side Dishes</h4>
+                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- begin third content section -->
         <section class="section__third">
             <!-- begin content wrapper -->
-            <div class="wrapper__third"></div>
+            <div class="wrapper__third">
+                <div class="image__stamp">
+                    <img src="./assets/home/home-circle-text.png" alt="A circular seal of approval reads: yum, a fancy food place.">
+                </div>
+                <div class="image__third">
+                    <img src="./assets/home/home-4.jpeg" alt="Several wooden chairs and tables are seen in an empty restaurant.">
+                </div>
+                <div class="section__text">
+                <h2>Our Restaurants</h2>
+                <hr class="green__divider" />
+                <p class="text__light">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                </div>
+            </div>
         </section>
         <!-- begin gallery section -->
         <section class="section__gallery">
             <!-- begin content wrapper -->
-            <div class="wrapper__gallery"></div>
+            <div class="grid__gallery">
+                <div class="image__gallery">
+                    <img src="./assets/home/home-5.jpeg" alt="A fresh pesto salad with beans, pine nuts, tomatoes, and edible flowers is on a plate.">
+                </div>
+                <div class="image__gallery">
+                    <img src="./assets/home/home-6.jpeg" alt="A quinoa patty with hot sauce underneath it is on a bun with purple and green cabbage slaw on top, with chives sprinkled around it.">
+                </div>
+                <div class="image__gallery">
+                    <img src="./assets/home/home-7.jpeg" alt="Several red onions are stacked together.">
+                </div>
+                <div class="image__gallery">
+                    <img src="./assets/home/home-8.jpeg" alt="A frosted cake with a small floral arrangement on top.">
+                </div>
+                <div class="image__gallery">
+                    <img src="./assets/home/home-9.jpeg" alt="Some blueberries cookies lie on paper next to a bowl of blueberries and a couple of flowers.">
+                </div>
+                <div class="image__gallery">
+                    <img src="./assets/home/home-10.jpeg" alt="A bowl of tzatziki with a spoon dipped in it.">
+                </div>
+            </div>
         </section>
         <!-- begin blockquote section -->
         <section class="section__blockquote">
             <!-- begin content wrapper -->
-            <div class="wrapper__blockquote"></div>
+            <div class="wrapper__blockquote">
+                <div class="section__text">
+                    <h2>Our Restaurants</h2>
+                    <hr class="green__divider" />
+                    <!-- block quotes w/ CSS - 3.15 pesuedoElements -->
+                    <!-- blockquote::before {
+                        content: open-quote;
+                        font-size: 5rem;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+            
+                    blockquote::after {
+                        content: close-quote;
+                        font-size: 5rem;
+                        position: absolute;
+                        bottom: -60px;
+                        right: 0;
+                    } -->
+                    <blockquote>
+                        <p class="text__dark">Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
+                    </blockquote>
+                    <!-- insert chevron icons -->
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
         </section>
     </main>
 
