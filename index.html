@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <!-- add google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
     <!-- add fontawesome  -->
     <script src='https://kit.fontawesome.com/fbc2e650be.js'></script>
     <title>Document</title>
 </head>
 <body>
     <!-- begin header -->
-    <header>
+    <header class="header__home">
         <!-- begin header wrapper -->
         <div class="wrapper__header">
-            <h1>delicious</h1>
             <!-- navigation starts -->
-            <nav class="header__nav">
-                <ul class="header__list">
+            <nav class="nav__header">
+                <h1>delicious</h1>
+                <ul class="nav__list">
                     <li class="nav__link"><a href="#">home</a></li>
                     <li class="nav__link"><a href="#">about</a></li>
                     <li class="nav__link"><a href="#">recipes</a></li>
@@ -41,12 +43,13 @@
             <div class="image__first">
                 <img src="./assets/home/home-2.jpeg" alt="A head of read leaf lettuce is in a ceramic dish, with small leaves surrounding it.">
             </div>
-            <!-- begin content wrapper -->
-            <div class="wrapper__first">
-                <h2>Most Popular Recipes</h2>
-                <hr class="green__divider" />
-                <p class="text__dark">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettice lettice water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuc parsley jicama salsify.</p>
-                <button class="deep__green">View Recipes</button>
+            <div class="content__first">
+                <div class="content__wrapper">
+                    <h2>Most Popular Recipes</h2>
+                    <hr class="divider__green" />
+                    <p class="text__dark">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettice lettice water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuc parsley jicama salsify.</p>
+                    <button class="deep__green">View Recipes</button>
+                </div>
             </div>
         </section>
         <!-- begin second content section -->
@@ -54,8 +57,8 @@
             <div class="image__second">
                 <img src="./assets/home/home-3.jpeg" alt="A taco filled with cucumber, cilantro, and rare beef is propped up by lime slices and a tomatillo.">
             </div>
-            <!-- begin content wrapper -->
-            <div class="wrapper__second">
+
+            <div class="content__second">
                 <!-- float icons left of the list item they are contained in week1/day2/gallery layout exercise-->
                 <!-- .feature i,
         .feature h2 {
@@ -113,7 +116,7 @@
                 </div>
                 <div class="section__text">
                 <h2>Our Restaurants</h2>
-                <hr class="green__divider" />
+                <hr class="divider__green" />
                 <p class="text__light">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
                 </div>
             </div>
@@ -148,7 +151,7 @@
             <div class="wrapper__blockquote">
                 <div class="section__text">
                     <h2>Our Restaurants</h2>
-                    <hr class="green__divider" />
+                    <hr class="divider__green" />
                     <!-- block quotes w/ CSS - 3.15 pesuedoElements -->
                     <!-- blockquote::before {
                         content: open-quote;
@@ -184,12 +187,12 @@
                 <h3 class="footer__heading">Delicious</h3>
                 <ul class="footer__address">
                     <li class="address__item">Soko radicchio bunya nuts gram dulsesilver best parsnip napa cabbage lotus root sea lettuce brussels sprout cabbage.</li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="address__item">A delicious restaurant</li>
                     <li class="address__item">Toronto, Ontario</li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="address__item">yum@food.com</li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="address__item">+1 234 567 8910</li>
                 </ul>
             </div>
@@ -197,15 +200,15 @@
                 <h4 class="footer__heading">Recent Posts</h4>
                 <ul>
                     <li class="blog__post"><a href="#">Beetroot water spinach okra water</a></li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="blog__post"><a href="#">Chestnut ricebean pea catsear courgette</a></li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="blog__post"><a href="#">Summer purslane spinach arugula pea</a></li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="blog__post"><a href="#">Tatsol aubergine spring onion bush</a></li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="blog__post"><a href="#">Tomato kale radicchio turnip chicory</a></li>
-                    <li class="footer__divider"><hr /></li>
+                    <li class="divider__footer"><hr /></li>
                     <li class="blog__post"><a href="#">Salsify pea sprouts fava bean</a></li>
                 </ul>
             </div>

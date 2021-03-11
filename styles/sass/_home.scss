@@ -1,0 +1,60 @@
+.section {
+
+    &__first,
+    &__second {
+        display: flex;
+    }
+}
+
+.image {
+
+    &__first,
+    &__second {
+        width: 50%;
+    }
+}
+
+.content {
+
+    &__first {
+        width: 50%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__second {
+        width: 50%;
+    }
+    
+}
+
+// grid
+.grid {
+
+    &__menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+
+.menu {
+    
+    &__feature i {
+        float: left;
+    }
+
+    &__feature p {
+        clear: both;
+        padding: 10px 5px;
+    }
+}

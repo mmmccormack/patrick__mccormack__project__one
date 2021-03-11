@@ -251,12 +251,119 @@ html {
   font-size: 125%;
 }
 
+.header__home {
+  height: 100vh;
+  background: center top/cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/home/home-1.jpeg);
+}
+
 .wrapper__header {
   width: 95%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.03rem;
+  color: #2e2e2e;
   text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.nav__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav__link a {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.65rem;
+  color: #2e2e2e;
+  padding: 0 15px;
+}
+.nav__link a:hover {
+  color: #64A604;
+}
+.nav__burger {
+  display: none;
+}
+
+.section__first, .section__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image__first, .image__second {
+  width: 50%;
+}
+
+.content__first {
+  width: 50%;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.content__wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+.content__second {
+  width: 50%;
+}
+
+.grid__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.menu__feature i {
+  float: left;
+}
+.menu__feature p {
+  clear: both;
+  padding: 10px 5px;
+}
+
+li {
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.divider__green {
+  width: 10%;
+  border: 2px solid #64A604;
 }

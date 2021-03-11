@@ -1,9 +1,11 @@
 @mixin lora($sizeValue, $lightenValue) {
+    font-family: 'Lora', serif;
     font-size: $sizeValue;
     color: lighten(#2E2E2E, $lightenValue);
 }
 
 @mixin raleway($sizeValue, $lightenValue) {
+    font-family: 'Raleway', sans-serif;
     font-size: $sizeValue;
     color: lighten(#2E2E2E, $lightenValue);
 }
