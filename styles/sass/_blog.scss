@@ -1,0 +1,144 @@
+.wrapper {
+    
+    &__blog {
+        width: 70%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+.blog {
+
+    &__post {
+        margin-top: 150px;
+    }
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__date {
+        @include raleway(0.6rem, 40);
+        text-transform: none;
+        margin: 8px 0 32px 0;
+    }
+
+    &__share {
+        display: flex;
+    }
+
+    &__author {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+}
+
+.share {
+
+    &__list {
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+    }
+
+    &__link {
+        padding: 0 15px;
+        color: $secondary;
+    }
+}
+
+.author {
+
+    &__image {
+        width: 20%;
+        height: auto;
+    }
+
+    &__bio {
+        width: 80%;
+        background-color: #F6F6F6;
+        padding: 0 40px;
+    }
+}
+
+.related__posts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.post {
+
+    &__descrip {
+        width: calc((100% / 3) - 20px);
+    }
+
+}
+
+.comment {
+
+    &__entry {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    &__post {
+        width: 90%;
+        background-color: #F6F6F6;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    &__post::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: #F6F6F6;
+        position: absolute;
+        top: 20px;
+        left: -5px;
+        transform: rotate(45deg);
+    }
+
+    &__submit {
+        margin: 50px 0 150px 0;
+    }
+
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        input {
+            width: calc((100% / 3) - 15px);
+            padding: 10px;
+            border: 1px solid darken(#F6F6F6, 10);
+        }
+
+        input[type="text"]::placeholder,
+        input[type="email"]::placeholder {
+            @include lora(0.6rem, 20);
+            letter-spacing: 0.3px;
+        }
+    }
+
+    &__text {
+
+        textarea {
+            width: 100%;
+            height: 20vh;
+            padding: 10px;
+            resize: none;
+            margin: 20px 0;
+            border: 1px solid darken(#F6F6F6, 10);
+        }
+    
+        textarea::placeholder {
+            @include lora(0.6rem, 20);
+            letter-spacing: 0.3px;
+        }
+
+    }
+}
+

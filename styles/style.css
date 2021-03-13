@@ -269,11 +269,35 @@ h2 {
   letter-spacing: 1.1px;
 }
 
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
 h4 {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   color: #2e2e2e;
   text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .body__text {
@@ -283,6 +307,16 @@ h4 {
   line-height: 20px;
   line-height: 24px;
   letter-spacing: 0.3px;
+}
+
+.blog__text {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-bottom: 30px;
 }
 
 .text__light {
@@ -304,6 +338,57 @@ h4 {
   font-style: italic;
 }
 
+.text__accent {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #949494;
+  line-height: 20px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+span.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  color: #616161;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+span.poster {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+span.name {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  color: #616161;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+.post__date {
+  font-family: "Lora", serif;
+  font-size: 0.5rem;
+  color: #949494;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.comment__date {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.5rem;
+  color: #616161;
+  text-transform: uppercase;
+  text-transform: none;
+  letter-spacing: 0.4px;
+}
+
 .divider__green {
   border: 2px solid #64A604;
 }
@@ -312,6 +397,16 @@ h4 {
   border-bottom: none;
   border-left: none;
   border-right: none;
+}
+.divider__clear hr {
+  border: none;
+}
+.divider__blog {
+  border-top: 2px solid #e1e1e1;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin: 30px 0;
 }
 
 .footer__social hr {
@@ -375,51 +470,6 @@ blockquote::after {
   text-transform: uppercase;
 }
 
-input[type=email]::-webkit-input-placeholder {
-  font-family: "Lora", serif;
-  font-size: 0.6rem;
-  color: #e1e1e1;
-  line-height: 20px;
-  font-style: italic;
-  letter-spacing: 0.3px;
-}
-
-input[type=email]::-moz-placeholder {
-  font-family: "Lora", serif;
-  font-size: 0.6rem;
-  color: #e1e1e1;
-  line-height: 20px;
-  font-style: italic;
-  letter-spacing: 0.3px;
-}
-
-input[type=email]:-ms-input-placeholder {
-  font-family: "Lora", serif;
-  font-size: 0.6rem;
-  color: #e1e1e1;
-  line-height: 20px;
-  font-style: italic;
-  letter-spacing: 0.3px;
-}
-
-input[type=email]::-ms-input-placeholder {
-  font-family: "Lora", serif;
-  font-size: 0.6rem;
-  color: #e1e1e1;
-  line-height: 20px;
-  font-style: italic;
-  letter-spacing: 0.3px;
-}
-
-input[type=email]::placeholder {
-  font-family: "Lora", serif;
-  font-size: 0.6rem;
-  color: #e1e1e1;
-  line-height: 20px;
-  font-style: italic;
-  letter-spacing: 0.3px;
-}
-
 .copyright {
   font-family: "Raleway", sans-serif;
   font-size: 0.6rem;
@@ -433,8 +483,8 @@ input[type=email]::placeholder {
   background: center top/cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/home/home-1.jpeg);
 }
 .header__blog {
-  height: 100vh;
-  background: center top/cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/blog/blog-1.jpeg);
+  height: 60vh;
+  background: center top/100% no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/blog/blog-1.jpeg);
 }
 .header__contact {
   height: 100vh;
@@ -514,6 +564,46 @@ footer {
   background-color: #535353;
   border: 1px solid transparent;
   padding: 8px;
+}
+.footer__form input[type=email]::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+.footer__form input[type=email]::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+.footer__form input[type=email]:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+.footer__form input[type=email]::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+.footer__form input[type=email]::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
 }
 .footer__form button {
   background-color: #64A604;
@@ -700,6 +790,11 @@ footer {
   padding: 25px 0 50px 0;
 }
 
+button.chevron {
+  background-color: transparent;
+  border: none;
+}
+
 .fa-chevron-left,
 .fa-chevron-right {
   color: #FFF;
@@ -714,6 +809,372 @@ footer {
   color: #ecf5c5;
   font-size: 1.2rem;
   padding: 0 20px;
+}
+
+.wrapper__blog {
+  width: 70%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.blog__post {
+  margin-top: 150px;
+}
+.blog__title {
+  margin-bottom: 0;
+}
+.blog__date {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  color: #949494;
+  text-transform: uppercase;
+  text-transform: none;
+  margin: 8px 0 32px 0;
+}
+.blog__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.share__list {
+  list-style-type: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.share__link {
+  padding: 0 15px;
+  color: #999999;
+}
+
+.author__image {
+  width: 20%;
+  height: auto;
+}
+.author__bio {
+  width: 80%;
+  background-color: #F6F6F6;
+  padding: 0 40px;
+}
+
+.related__posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.post__descrip {
+  width: calc((100% / 3) - 20px);
+}
+
+.comment__entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+.comment__post {
+  width: 90%;
+  background-color: #F6F6F6;
+  padding: 0 20px;
+  position: relative;
+}
+.comment__post::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #F6F6F6;
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.comment__submit {
+  margin: 50px 0 150px 0;
+}
+.comment__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.comment__field input {
+  width: calc((100% / 3) - 15px);
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+.comment__field input[type=text]::-webkit-input-placeholder, .comment__field input[type=email]::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__field input[type=text]::-moz-placeholder, .comment__field input[type=email]::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__field input[type=text]:-ms-input-placeholder, .comment__field input[type=email]:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__field input[type=text]::-ms-input-placeholder, .comment__field input[type=email]::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__field input[type=text]::placeholder,
+.comment__field input[type=email]::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__text textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 10px;
+  resize: none;
+  margin: 20px 0;
+  border: 1px solid #dddddd;
+}
+.comment__text textarea::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__text textarea::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__text textarea:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__text textarea::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.comment__text textarea::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #616161;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+
+.wrapper__white {
+  background-color: #FFFFFF;
+  width: 15%;
+}
+.wrapper__grey {
+  background-color: #F6F6F6;
+  width: 15%;
+}
+
+.contact__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact__form {
+  width: 50%;
+  background-color: #FFFFFF;
+  padding: 60px 30px;
+}
+.contact__details {
+  width: 20%;
+  background-color: #F6F6F6;
+  padding: 60px 30px;
+}
+.contact__field {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact__field input {
+  width: calc(50% - 20px);
+  background-color: #F6F6F6;
+  border: none;
+  padding: 15px 0 15px 15px;
+}
+.contact__field input[type=text] {
+  margin-right: 10px;
+}
+.contact__field input[type=email] {
+  margin-left: 10px;
+}
+.contact__field input[type=text]::-webkit-input-placeholder, .contact__field input[type=email]::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__field input[type=text]::-moz-placeholder, .contact__field input[type=email]::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__field input[type=text]:-ms-input-placeholder, .contact__field input[type=email]:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__field input[type=text]::-ms-input-placeholder, .contact__field input[type=email]::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__field input[type=text]::placeholder,
+.contact__field input[type=email]::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__text {
+  margin: 20px 0;
+}
+.contact__text input,
+.contact__text textarea {
+  width: 100%;
+  background-color: #F6F6F6;
+  border: none;
+  padding: 15px 0 15px 15px;
+}
+.contact__text textarea {
+  resize: none;
+  height: 40vh;
+}
+.contact__text input::-webkit-input-placeholder, .contact__text textarea::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__text input::-moz-placeholder, .contact__text textarea::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__text input:-ms-input-placeholder, .contact__text textarea:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__text input::-ms-input-placeholder, .contact__text textarea::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__text input::placeholder,
+.contact__text textarea::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-style: normal;
+}
+.contact__text button {
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.7rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+  color: #64A604;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+.contact__info {
+  list-style-type: none;
+  padding-left: 0;
+}
+.contact__banner {
+  width: 100%;
+  height: 60vh;
+  background: center top/cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/contact/contact-2.jpeg);
 }
 
 img {

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
     <!-- add fontawesome  -->
     <script src='https://kit.fontawesome.com/fbc2e650be.js'></script>
-    <title>Document</title>
+    <title>Delicious</title>
 </head>
 <body>
     <!-- begin header -->
@@ -28,8 +28,8 @@
                     <li class="nav__link"><a href="blog.html">blog</a></li>
                     <li class="nav__link"><a href="#">shop</a></li>
                     <li class="nav__link"><a href="contact.html">contact</a></li>
-                    <li class="nav__link"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-                    <li class="nav__link"><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="nav__link"><a href="#"><i aria-hidden="true" class="fas fa-shopping-bag" title="View shopping bag"></i><span class="sr-only">View shopping bag</span></a></li>
+                    <li class="nav__link"><a href="#"><i aria-hidden="true" class="fas fa-search" title="Search"></i><span class="sr-only">Search</span></a></li>
                     <li class="nav__burger"><a href="#"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
@@ -62,17 +62,17 @@
                 <div class="flex__menu">
                     <div class="flex__menu__left">
                         <div class="menu__feature">
-                            <i class="fas fa-lemon"></i>
+                            <i class="fas fa-lemon" aria-hidden="true"></i>
                             <h4>Vegetarian</h4>
                             <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                         </div>
                         <div class="menu__feature">
-                            <i class="fas fa-coffee"></i>
+                            <i class="fas fa-coffee" aria-hidden="true"></i>
                             <h4>Desserts</h4>
                             <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                         </div>
                         <div class="menu__feature">
-                            <i class="fas fa-leaf"></i>
+                            <i class="fas fa-leaf" aria-hidden="true"></i>
                             <h4>Salads</h4>
                             <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                         </div>
@@ -80,17 +80,17 @@
 
                     <div class="flex__menu__right">
                         <div class="menu__feature">
-                            <i class="fas fa-utensils"></i>
+                            <i class="fas fa-utensils" aria-hidden="true"></i>
                             <h4>Appetizers</h4>
                             <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                         </div>
                         <div class="menu__feature">
-                            <i class="fas fa-glass-martini"></i>
+                            <i class="fas fa-glass-martini" aria-hidden="true"></i>
                             <h4>Drinks</h4>
                             <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                         </div>
                         <div class="menu__feature">
-                            <i class="fas fa-utensil-spoon"></i>
+                            <i class="fas fa-utensil-spoon" aria-hidden="true"></i>
                             <h4>Side Dishes</h4>
                             <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
                         </div>
@@ -148,8 +148,12 @@
                         <p class="text__quote">Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
                     </blockquote>
                     <!-- insert chevron icons -->
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
+                    <button class="chevron" label="Go back one quote">
+                        <i aria-hidden="true" class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="chevron" label="Go forward one quote">
+                        <i aria-hidden="true" class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -200,15 +204,18 @@
                     <form action="#" method="#">
                         <!-- SR-ONLY LABEL -->
                         <input type="email" placeholder="Enter your email">
-                        <button class="submit">&#8594;</button>
+                        <button class="submit" type="submit">&#8594;</button>
                     </form>
                 </div>
                 <div class="footer__social">
                     <hr />
                     <ul class="social__list">
-                        <li class="social__link"><i class="fab fa-facebook-f"></i></li>
-                        <li class="social__link"><i class="fab fa-twitter"></i></li>
-                        <li class="social__link"><i class="fab fa-instagram"></i></li>
+                        <li class="social__link"><i aria-hidden="true" class="fab fa-facebook-f" title="Check out our Facebook page"></i><span class="sr-only">Check out our Facebook page</span></li>
+                        <li class="social__link"><i aria-hidden="true" class="fab fa-twitter" title="Check out our Twitter page"></i><span class="sr-only">Check out our Twitter page</span></li>
+                        <li class="social__link"><i aria-hidden="true" class="fab fa-instagram" title="Check out our Instagram page"></i><span class="sr-only">Check out our Instagram page</span></li>
+
+                        
+
                     </ul>
                 </div>
             </div> 

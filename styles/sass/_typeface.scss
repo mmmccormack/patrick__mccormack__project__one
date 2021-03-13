@@ -11,14 +11,36 @@ h2 {
     letter-spacing: 1.1px;
 }
 
+h3 {
+    @include raleway(1.2rem, 0);
+    letter-spacing: 1.1px;
+}
+
 h4 {
     @include raleway(1rem, 0);
+}
+
+h5 {
+    @include raleway(0.8rem, 0);
+    margin-bottom: 4px;
+}
+
+h6 {
+    @include raleway(0.7rem, 0);
+    margin-bottom: 4px;
 }
 
 .body__text {
     @include lora(0.7rem, 30);
     line-height: 24px;
     letter-spacing: 0.3px;
+}
+
+.blog__text {
+    @include lora(0.7rem, 30);
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 30px;
 }
 
 .text__light {
@@ -32,6 +54,39 @@ h4 {
     line-height: 36px;
     letter-spacing: 0.6px;
     font-style: italic;
+}
+
+.text__accent {
+    @include lora(0.6rem, 40);
+    font-style: italic;
+    margin-top: 0;
+}
+
+span.title {
+    @include raleway(0.7rem, 20);
+    margin-right: 8px;
+}
+
+span.poster {
+    @include raleway(0.6rem, 30);
+    text-transform: none;
+}
+
+span.name {
+    @include raleway(0.7rem, 20);
+    text-transform: none;
+}
+
+.post__date {
+    @include lora(0.5rem, 40);
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.comment__date {
+    @include raleway(0.5rem, 20);
+    text-transform: none;
+    letter-spacing: 0.4px;
 }
 
 // miscellaneous styling (buttons, content dividers, blockquotes)
@@ -48,6 +103,19 @@ h4 {
         border-left: none;
         border-right: none;
     }
+
+    &__clear hr {
+        border: none;
+    }
+
+    &__blog {
+        border-top: 2px solid lighten($primary, 70);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        margin: 30px 0;
+    }
+
 }
 
 .footer__social hr {
@@ -106,12 +174,6 @@ blockquote::after {
         letter-spacing: 0.5px;
         text-transform: uppercase;
     }
-}
-
-input[type="email"]::placeholder {
-    @include lora(0.6rem, 70);
-    font-style: italic;
-    letter-spacing: 0.3px;
 }
 
 .copyright {
