@@ -2,6 +2,7 @@
     font-family: 'Lora', serif;
     font-size: $sizeValue;
     color: lighten(#2E2E2E, $lightenValue);
+    line-height: 20px;
 }
 
 @mixin raleway($sizeValue, $lightenValue) {

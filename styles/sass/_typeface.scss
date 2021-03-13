@@ -1,0 +1,60 @@
+.body__text {
+    @include lora(0.7rem, 30);
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+// content dividers
+
+.divider {
+
+    &__green {
+        width: 10%;
+        border: 2px solid $deepgreen;
+    }
+
+    &__footer  hr {
+        border-top: 2px solid lighten($primary, 10);
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+.footer__social hr {
+    border-top: 2px solid lighten($primary, 10);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+// additional footer text stylings
+
+.footer {
+
+    &__green {
+        @include raleway(1.5rem, 100);
+        color: $deepgreen;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+    }
+
+    &__heading {
+        @include raleway(0.9rem, 100);
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+}
+
+input[type="email"]::placeholder {
+    @include lora(0.6rem, 70);
+    font-style: italic;
+    letter-spacing: 0.3px;
+}
+
+.copyright {
+    @include raleway(0.6rem, 30);
+
+}

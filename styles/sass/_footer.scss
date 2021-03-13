@@ -1,0 +1,84 @@
+footer {
+    background-color: #2E2E2E;
+}
+
+.wrapper {
+
+    &__footer {
+        width: 85%;
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+}
+
+.footer {
+
+    &__contact,
+    &__blog,
+    &__subscribe {
+        width: 25%;
+    }
+
+    &__address,
+    &__posts {
+        list-style-position: inside;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__form {
+
+        input {
+            width: 80%;
+            background-color: #535353;
+            border: 1px solid transparent;
+            padding: 8px;
+        }
+
+        button {
+            background-color: $deepgreen;
+            color: #FFFFFF;
+            padding: 8px;
+            width: 20%;
+            margin-left: -5px;
+            border: 1px solid transparent;
+        }
+    }
+
+}
+
+.social {
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__link {
+        color: #FFFFFF;
+        padding-right: 20px;
+    }
+}
+
+.copyright {
+    background-color: darken($primary, 3.5);
+    padding: 5px;
+}
+
+.copyright p {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 15px 15px 0;
+}
+
+.polar {
+    color: $deepgreen;
+    text-transform: uppercase;
+}

@@ -32,14 +32,18 @@ h1 {
     &__list {
         display: flex;
         justify-content: space-around;
+        list-style-type: none;
     }
 
     &__link a {
         text-transform: uppercase;
         @include raleway(0.65rem, 0);
         padding: 0 15px;
+        
+        text-decoration: none;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: $deepgreen;
         }
     }
@@ -48,3 +52,11 @@ h1 {
         display: none;
     }
 }
+
+// li {
+//     list-style-type: none;
+//     a {
+//         text-decoration: none;
+//         color: black;
+//     }
+// }

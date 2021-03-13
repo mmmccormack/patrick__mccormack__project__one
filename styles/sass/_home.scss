@@ -49,12 +49,22 @@
 
 .menu {
     
+    &__feature {
+        position: relative;
+    }
+
     &__feature i {
-        float: left;
+        position: absolute;
+        top: 30px;
+        left: -20px;
+    }
+
+    &__feature h4 {
+        margin-bottom: 0;
     }
 
     &__feature p {
-        clear: both;
         padding: 10px 5px;
+        margin-top: 0;
     }
 }

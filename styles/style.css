@@ -251,6 +251,103 @@ html {
   font-size: 125%;
 }
 
+.body__text {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  color: #7b7b7b;
+  line-height: 20px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.divider__green {
+  width: 10%;
+  border: 2px solid #64A604;
+}
+.divider__footer hr {
+  border-top: 2px solid #484848;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.footer__social hr {
+  border-top: 2px solid #484848;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+
+.footer__green {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  color: #64A604;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+.footer__heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+input[type=email]::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+input[type=email]::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+input[type=email]:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+input[type=email]::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+input[type=email]::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  line-height: 20px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+.copyright {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  color: #7b7b7b;
+}
+
 .header__home {
   height: 100vh;
   background: center top/cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/home/home-1.jpeg);
@@ -287,6 +384,7 @@ h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style-type: none;
 }
 .nav__link a {
   text-transform: uppercase;
@@ -294,12 +392,87 @@ h1 {
   font-size: 0.65rem;
   color: #2e2e2e;
   padding: 0 15px;
+  text-decoration: none;
 }
-.nav__link a:hover {
+.nav__link a:hover, .nav__link a:focus {
   color: #64A604;
 }
 .nav__burger {
   display: none;
+}
+
+footer {
+  background-color: #2E2E2E;
+}
+
+.wrapper__footer {
+  width: 85%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__contact, .footer__blog, .footer__subscribe {
+  width: 25%;
+}
+.footer__address, .footer__posts {
+  list-style-position: inside;
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer__form input {
+  width: 80%;
+  background-color: #535353;
+  border: 1px solid transparent;
+  padding: 8px;
+}
+.footer__form button {
+  background-color: #64A604;
+  color: #FFFFFF;
+  padding: 8px;
+  width: 20%;
+  margin-left: -5px;
+  border: 1px solid transparent;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0;
+  list-style: none;
+}
+.social__link {
+  color: #FFFFFF;
+  padding-right: 20px;
+}
+
+.copyright {
+  background-color: #252525;
+  padding: 5px;
+}
+
+.copyright p {
+  width: 85%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px 15px 15px 0;
+}
+
+.polar {
+  color: #64A604;
+  text-transform: uppercase;
 }
 
 .section__first, .section__second {
@@ -342,28 +515,23 @@ h1 {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.menu__feature {
+  position: relative;
+}
 .menu__feature i {
-  float: left;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+.menu__feature h4 {
+  margin-bottom: 0;
 }
 .menu__feature p {
-  clear: both;
   padding: 10px 5px;
-}
-
-li {
-  list-style-type: none;
-}
-li a {
-  text-decoration: none;
-  color: black;
+  margin-top: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
-}
-
-.divider__green {
-  width: 10%;
-  border: 2px solid #64A604;
 }
