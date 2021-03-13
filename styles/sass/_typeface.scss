@@ -1,15 +1,44 @@
+// primary text stylings
+
+h1 {
+    @include raleway(2.03rem, 0);
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+h2 {
+    @include raleway(1.5rem, 0);
+    letter-spacing: 1.1px;
+}
+
+h4 {
+    @include raleway(1rem, 0);
+}
+
 .body__text {
     @include lora(0.7rem, 30);
     line-height: 24px;
     letter-spacing: 0.3px;
 }
 
-// content dividers
+.text__light {
+    @include lora(0.7rem, 40);
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.text__quote {
+    @include lora(1.4rem, 10);
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    font-style: italic;
+}
+
+// miscellaneous styling (buttons, content dividers, blockquotes)
 
 .divider {
 
     &__green {
-        width: 10%;
         border: 2px solid $deepgreen;
     }
 
@@ -29,6 +58,37 @@
     margin-top: 25px;
     margin-bottom: -10px;
 }
+
+.deep__green {
+    background-color: $deepgreen;
+    border: 1px solid transparent;
+    @include raleway(0.7rem, 100);
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+blockquote::before {
+    content: '\f10d';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 3rem;
+    color: lighten($lightgreen, 10);
+    position: absolute;
+    top: 90px;
+    left: -60px;
+}
+
+blockquote::after {
+    content: '\f10e';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 3rem;
+    color: lighten($lightgreen, 10);
+    position: absolute;
+    bottom: 90px;
+    right: -60px;
+}
+
 // additional footer text stylings
 
 .footer {
@@ -56,5 +116,6 @@ input[type="email"]::placeholder {
 
 .copyright {
     @include raleway(0.6rem, 30);
-
+    text-transform: none;
 }
+

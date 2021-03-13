@@ -1,8 +1,18 @@
 .header {
 
     &__home {
-    height: 100vh;
-    background: center top / cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/home/home-1.jpeg);
+        height: 100vh;
+        background: center top / cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/home/home-1.jpeg);
+    }
+
+    &__blog {
+        height: 100vh;
+        background: center top / cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/blog/blog-1.jpeg);
+    }
+
+    &__contact {
+        height: 100vh;
+        background: center top / cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/contact/contact-1.jpeg);
     }
 }
 
@@ -13,12 +23,6 @@
         max-width: 1400px;
         margin: 0 auto;
     }
-}
-
-h1 {
-    @include raleway(2.03rem, 0);
-    text-transform: uppercase;
-    letter-spacing: 1.1px;
 }
 
 .nav {
@@ -52,11 +56,3 @@ h1 {
         display: none;
     }
 }
-
-// li {
-//     list-style-type: none;
-//     a {
-//         text-decoration: none;
-//         color: black;
-//     }
-// }

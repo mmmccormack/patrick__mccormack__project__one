@@ -4,6 +4,16 @@
     &__second {
         display: flex;
     }
+
+    &__third {
+        padding: 200px 0 120px 0;
+    }
+
+    &__blockquote {
+        background-color: $lightgreen;
+        padding: 150px 0;
+        text-align: center;
+    }
 }
 
 .image {
@@ -26,7 +36,7 @@
     }
 
     &__wrapper {
-        width: 60%;
+        width: 75%;
         margin: 0 auto;
     }
 
@@ -36,13 +46,37 @@
     
 }
 
-// grid
-.grid {
+.heading {
+    
+    &__first + .divider__green {
+        width: 10%;
+    }
 
-    &__menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    &__second + .divider__green {
+        width: 5%;
+    }
+
+    &__third + .divider__green {
+        width: 7%;
+    }
+}
+
+.divider__green + .body__text {
+    padding: 30px 0;
+}
+
+.flex__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+
+    &__left {
+        margin-right: 25px;
+    }
+
+    &__right {
+        margin-left: 25px;
     }
 }
 
@@ -55,16 +89,81 @@
 
     &__feature i {
         position: absolute;
-        top: 30px;
-        left: -20px;
+        top: 0;
+        left: -50px;
+        color: $primary;
+        font-size: 1.4rem;
     }
 
     &__feature h4 {
         margin-bottom: 0;
+        color: $primary;
     }
 
     &__feature p {
         padding: 10px 5px;
         margin-top: 0;
     }
+}
+
+.flex__third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.image {
+
+    &__third {
+        position: relative;
+    }
+
+    &__stamp {
+        position: absolute;
+        top: -115px;
+        right: -75px;
+    }
+}
+
+.image__third + .content__third {
+    padding-top: 50px;
+}
+
+.divider__green + .text__light {
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.grid__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content__quote {
+    position: relative;
+}
+
+.text__quote {
+    padding: 25px 0 50px 0;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    color: #FFF;
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+.fa-chevron-left:hover,
+.fa-chevron-right:hover,
+.fa-chevron-left:focus,
+.fa-chevron-right:focus {
+    color: lighten($lightgreen, 10);
+    font-size: 1.2rem;
+    padding: 0 20px;
 }

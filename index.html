@@ -45,9 +45,9 @@
             </div>
             <div class="content__first">
                 <div class="content__wrapper">
-                    <h2>Most Popular Recipes</h2>
+                    <h2 class="heading__first">Most Popular Recipes</h2>
                     <hr class="divider__green" />
-                    <p class="text__dark">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettice lettice water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuc parsley jicama salsify.</p>
+                    <p class="body__text">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettice lettice water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko chicory celtuc parsley jicama salsify.</p>
                     <button class="deep__green">View Recipes</button>
                 </div>
             </div>
@@ -59,48 +59,41 @@
             </div>
 
             <div class="content__second">
-                <!-- float icons left of the list item they are contained in week1/day2/gallery layout exercise-->
-                <!-- .feature i,
-        .feature h2 {
-            float: left;
-        }
+                <div class="flex__menu">
+                    <div class="flex__menu__left">
+                        <div class="menu__feature">
+                            <i class="fas fa-lemon"></i>
+                            <h4>Vegetarian</h4>
+                            <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                        </div>
+                        <div class="menu__feature">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Desserts</h4>
+                            <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                        </div>
+                        <div class="menu__feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Salads</h4>
+                            <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                        </div>
+                    </div>
 
-        .feature p {
-            clear: both;
-            padding: 10px 5px;
-        } -->
-                <!-- display in a 2col3row grid -->
-                <div class="grid__menu">
-                    <div class="menu__feature clearfix">
-                        <i class="fas fa-lemon"></i>
-                        <h4>Vegetarian</h4>
-                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
-                    </div>
-                    <div class="menu__feature clearfix">
-                        <i class="fas fa-utensils"></i>
-                        <h4>Appetizers</h4>
-                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
-                    </div>
-                    <div class="menu__feature">
-                        <i class="fas fa-coffee"></i>
-                        <div class="menu__feature__item"></div>
-                        <h4>Desserts</h4>
-                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
-                    </div>
-                    <div class="menu__feature clearfix">
-                        <i class="fas fa-glass-martini"></i>
-                        <h4>Drinks</h4>
-                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
-                    </div>
-                    <div class="menu__feature clearfix">
-                        <i class="fas fa-leaf"></i>
-                        <h4>Salads</h4>
-                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
-                    </div>
-                    <div class="menu__feature clearfix">
-                        <i class="fas fa-utensil-spoon"></i>
-                        <h4>Side Dishes</h4>
-                        <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                    <div class="flex__menu__right">
+                        <div class="menu__feature">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Appetizers</h4>
+                            <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                        </div>
+                        <div class="menu__feature">
+                            <i class="fas fa-glass-martini"></i>
+                            <h4>Drinks</h4>
+                            <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                        </div>
+                        <div class="menu__feature">
+                            <i class="fas fa-utensil-spoon"></i>
+                            <h4>Side Dishes</h4>
+                            <p class="text__light">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,15 +101,13 @@
         <!-- begin third content section -->
         <section class="section__third">
             <!-- begin content wrapper -->
-            <div class="wrapper__third">
-                <div class="image__stamp">
-                    <img src="./assets/home/home-circle-text.png" alt="A circular seal of approval reads: yum, a fancy food place.">
-                </div>
+            <div class="flex__third">
                 <div class="image__third">
+                    <img class="image__stamp" src="./assets/home/home-circle-text.png" alt="A circular seal of approval reads: 'yum, a fancy food place.'">
                     <img src="./assets/home/home-4.jpeg" alt="Several wooden chairs and tables are seen in an empty restaurant.">
                 </div>
-                <div class="section__text">
-                <h2>Our Restaurants</h2>
+                <div class="content__third">
+                <h2 class="heading__second">Our Restaurants</h2>
                 <hr class="divider__green" />
                 <p class="text__light">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
                 </div>
@@ -149,28 +140,12 @@
         <!-- begin blockquote section -->
         <section class="section__blockquote">
             <!-- begin content wrapper -->
-            <div class="wrapper__blockquote">
-                <div class="section__text">
-                    <h2>Hungry Clients</h2>
+            <div class="content__wrapper">
+                <div class="content__quote">
+                    <h2 class="heading__third">Hungry Clients</h2>
                     <hr class="divider__green" />
-                    <!-- block quotes w/ CSS - 3.15 pesuedoElements -->
-                    <!-- blockquote::before {
-                        content: open-quote;
-                        font-size: 5rem;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                    }
-            
-                    blockquote::after {
-                        content: close-quote;
-                        font-size: 5rem;
-                        position: absolute;
-                        bottom: -60px;
-                        right: 0;
-                    } -->
                     <blockquote>
-                        <p class="text__dark">Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
+                        <p class="text__quote">Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.</p>
                     </blockquote>
                     <!-- insert chevron icons -->
                     <i class="fas fa-chevron-left"></i>
@@ -187,32 +162,32 @@
             <div class="footer__contact">
                 <h3 class="footer__green">Delicious</h3>
                 <ul class="footer__address">
-                    <li class="address__item body__text">Soko radicchio bunya nuts gram dulse</li> 
-                    <li class="address__item body__text">silver best parsnip napa cabbage lotus</li>
-                    <li class="address__item body__text">root sea lettuce brussels sprout cabbage.</li>
+                    <li class="body__text">Soko radicchio bunya nuts gram dulse</li> 
+                    <li class="body__text">silver best parsnip napa cabbage lotus</li>
+                    <li class="body__text">root sea lettuce brussels sprout cabbage.</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="address__item body__text">A delicious restaurant</li>
-                    <li class="address__item body__text">Toronto, Ontario</li>
+                    <li class="body__text">A delicious restaurant</li>
+                    <li class="body__text">Toronto, Ontario</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="address__item body__text">yum@food.com</li>
+                    <li class="body__text">yum@food.com</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="address__item body__text">+1 234 567 8910</li>
+                    <li class="body__text">+1 234 567 8910</li>
                 </ul>
             </div>
             <div class="footer__blog">
                 <h4 class="footer__heading">Recent Posts</h4>
                 <ul class="footer__posts">
-                    <li class="blog__post  body__text">Beetroot water spinach okra water</li>
+                    <li class="body__text">Beetroot water spinach okra water</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="blog__post  body__text">Chestnut ricebean pea catsear courgette</li>
+                    <li class="body__text">Chestnut ricebean pea catsear courgette</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="blog__post  body__text">Summer purslane spinach arugula pea</li>
+                    <li class="body__text">Summer purslane spinach arugula pea</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="blog__post body__text">Tatsol aubergine spring onion bush</li>
+                    <li class="body__text">Tatsol aubergine spring onion bush</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="blog__post  body__text">Tomato kale radicchio turnip chicory</li>
+                    <li class="body__text">Tomato kale radicchio turnip chicory</li>
                     <li class="divider__footer"><hr /></li>
-                    <li class="blog__post  body__text">Salsify pea sprouts fava bean</li>
+                    <li class="body__text">Salsify pea sprouts fava bean</li>
                 </ul>
             </div>
             <div class="footer__subscribe">
