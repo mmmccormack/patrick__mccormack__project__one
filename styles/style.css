@@ -321,7 +321,7 @@ h6 {
 
 .text__light {
   font-family: "Lora", serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: #949494;
   line-height: 20px;
   line-height: 24px;
@@ -512,6 +512,8 @@ blockquote::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
@@ -530,6 +532,12 @@ blockquote::after {
 }
 .nav__burger {
   display: none;
+  border: none;
+  background: none;
+  font-size: 2rem;
+}
+.nav__burger a {
+  color: #2E2E2E;
 }
 
 footer {
@@ -709,10 +717,7 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10%;
+  margin: 2% 10% 10% 18%;
 }
 .flex__menu__left {
   margin-right: 25px;
@@ -1177,6 +1182,187 @@ button.chevron {
   background: center top/cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/contact/contact-2.jpeg);
 }
 
+@media (max-width: 768px) {
+  .header__home {
+    height: 60vh;
+  }
+}
+@media (max-width: 640px) {
+  .header__home {
+    height: 40vh;
+  }
+
+  .nav__list {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+  }
+}
+@media (max-width: 1220px) {
+  .flex__menu {
+    margin: 0 0 0 40px;
+  }
+  .flex__menu__right {
+    margin-left: 0;
+  }
+  .flex__menu h4 {
+    font-size: 0.8rem;
+  }
+  .flex__menu i {
+    font-size: 0.9rem;
+    left: -25px;
+  }
+
+  .text__light {
+    line-height: 18px;
+  }
+}
+@media (max-width: 1040px) {
+  .heading__first {
+    font-size: 1rem;
+  }
+
+  .content__first .body__text {
+    font-size: 0.5rem;
+    padding-bottom: 0;
+  }
+
+  .body__text + .deep__green {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .section__first, .section__second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .image__first, .image__second {
+    width: 75%;
+    margin: 40px auto;
+  }
+
+  .content__first, .content__second {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .flex__menu__left, .flex__menu__right {
+    width: 40%;
+  }
+}
+@media (max-width: 640px) {
+  .flex__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex__menu__left, .flex__menu__right {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .image__stamp {
+    width: 30%;
+    top: -90px;
+    right: 10px;
+  }
+  .image__base {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .image__stamp {
+    width: 15%;
+    top: -45px;
+    right: 95px;
+  }
+  .image__base {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .heading__second {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 440px) {
+  .image__stamp {
+    top: -35px;
+    right: 75px;
+  }
+}
+@media (max-width: 640px) {
+  .grid__gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .section__blockquote {
+    padding: 50px 0;
+  }
+
+  .text__quote {
+    font-size: 0.6rem;
+    line-height: 24px;
+  }
+
+  blockquote::before {
+    font-size: 2rem;
+    left: -30px;
+  }
+
+  blockquote::after {
+    font-size: 2rem;
+    right: -30px;
+  }
+}
+@media (max-width: 640px) {
+  .text__quote {
+    font-size: 0.6rem;
+    line-height: 18px;
+  }
+}
+@media (max-width: 640px) {
+  .wrapper__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__contact, .footer__blog, .footer__subscribe {
+    width: 70%;
+    text-align: center;
+  }
+
+  .divider__footer hr,
+.footer {
+    width: 70%;
+  }
+
+  .body__text {
+    font-size: 0.6rem;
+  }
+}
 img {
   display: block;
   max-width: 100%;
