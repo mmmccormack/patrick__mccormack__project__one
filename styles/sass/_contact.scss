@@ -35,18 +35,18 @@
         display: flex;
         justify-content: space-between;
 
-        & input {
+        input {
             width: calc(50% - 20px);
             background-color: #F6F6F6;
             border: none;
             padding: 15px 0 15px 15px;
         }
 
-        & input[type="text"] {
+        input[type="text"] {
             margin-right: 10px;
         }
 
-        & input[type="email"] {
+        input[type="email"] {
             margin-left: 10px;
         }
 
@@ -106,4 +106,8 @@
         height: 60vh;
         background: center top / cover no-repeat url(/Users/admin101/Desktop/Juno/BOOTCAMP/PROJECT1/assets/contact/contact-2.jpeg);
     }
+}
+
+.body__text + .text__light {
+    margin-top: -15px;
 }
