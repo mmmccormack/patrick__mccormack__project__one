@@ -1,5 +1,5 @@
 footer {
-    background-color: #2E2E2E;
+    background-color: $primary;
 }
 
 .wrapper {
@@ -12,7 +12,6 @@ footer {
         justify-content: space-between;
         align-items: baseline;
     }
-
 }
 
 .footer {
@@ -51,6 +50,7 @@ footer {
             padding: 8px;
             width: 20%;
             margin-left: -5px;
+            margin-bottom: 10px;
             border: 1px solid transparent;
         }
     }

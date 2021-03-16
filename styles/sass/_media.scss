@@ -1,61 +1,16 @@
 // main page media queries
 
-// header
-
-@media (max-width: 768px) {
-    
-    .header {
-
-        &__home,
-        &__contact,
-        &__blog {
-            height: 60vh;
-        }
-    }
-
-}
-
-@media (max-width: 640px) { 
-    
-    .header {
-
-        &__home,
-        &__contact,
-        &__blog {
-            height: 40vh;
-        }
-    }
-    
-    .nav {
-
-        &__list {
-            display: none;
-        }
-
-        &__burger {
-            display: block;
-        }
-    }
-}
-
-
-@media (max-width: 480px) {
-
-
-}
-
-// first and second section
-
-@media (max-width: 1220px) {
+@media (max-width: 1280px) {
     .flex__menu {
-        margin: 0 0 0 40px;
-        
+        margin-top: 12%;
+
         &__right {
             margin-left: 0;
         }
 
         h4{
             font-size: 0.8rem;
+            margin-top: 0;
         }
 
         i {
@@ -68,8 +23,6 @@
         line-height: 18px;
     }
 } 
-
-
 
 @media (max-width: 1040px) { 
     
@@ -85,10 +38,6 @@
     .body__text + .deep__green {
         margin-bottom: 10px;
     }
-
-}
-
-@media (max-width: 1000px) {
 
     .section {
         
@@ -124,32 +73,19 @@
             width: 40%;
         }
     }
-
 }
-
-@media (max-width: 640px) {
-
-    .flex__menu {
-        flex-direction: column;
-        align-items: center;
-
-        &__left,
-        &__right {
-            width: 80%;
-            margin: 0 auto;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-
-
-}
-
-// third section
 
 @media (max-width: 768px) {
     
+    .header {
+
+        &__home,
+        &__contact,
+        &__blog {
+            height: 60vh;
+        }
+    }
+
     .image {
 
         &__stamp {
@@ -162,12 +98,45 @@
             max-width: 70%;
             margin: 0 auto;
         }
-
     }
 
+    .section__third {
+        padding: 100px 0;
+    }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px) { 
+    
+    .header {
+
+        &__home,
+        &__contact,
+        &__blog {
+            height: 40vh;
+        }
+    }
+    
+    .nav {
+
+        &__list {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+    .flex__menu {
+        flex-direction: column;
+        align-items: center;
+
+        &__left,
+        &__right {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
 
     .image {
 
@@ -184,31 +153,18 @@
 
     }
 
-    .heading__second {
-        font-size: 1rem;
+    .heading {
+
+        &__second, 
+        &__third {
+            font-size: 1rem;
+        }
     }
-}
 
-@media (max-width: 440px) {
-
-    .image__stamp {
-        top: -35px;
-        right: 75px;
-    }
-}
-
-// gallery section
-
-@media (max-width: 640px) {
     .grid__gallery {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-}
-
-// quote section
-
-@media (max-width: 640px) {
 
     .section__blockquote {
         padding: 50px 0;
@@ -227,19 +183,11 @@
         font-size: 2rem;
         right: -30px;
     }
-}
-
-@media (max-width: 640px) {
 
     .text__quote {
         font-size: 0.6rem;
         line-height: 18px;
     }
-}
-
-// footer section
-
-@media (max-width: 640px) {
 
     .wrapper__footer {
         flex-direction: column;
@@ -257,7 +205,7 @@
     }
 
     .divider__footer hr,
-    .footer{
+    .footer {
         width: 70%;
     }
 
@@ -269,6 +217,16 @@
         text-align: center;
     }
 }
+
+@media (max-width: 440px) {
+
+    .image__stamp {
+        top: -35px;
+        right: 75px;
+    }
+}
+
+
 
 // contact page
 
@@ -319,8 +277,8 @@
             height: 40vh;
         }
     }
-
 }
+
 @media (max-width: 480px) {
 
     .contact {
@@ -346,17 +304,15 @@
     }
 }
 
-// blog page
 
+// blog page
 
 @media (max-width: 768px) {
 
-    .blog {
-
-        &__post {
-            margin-top: 100px;
-        }
+    .blog__post {
+        margin-top: 100px;
     }
+
 
     .author__bio .body__text {
         font-size: 0.5rem;
@@ -428,8 +384,6 @@
             text-align: center;
         }
     }
-
-
 }
 
 @media (max-width: 480px) {
@@ -468,5 +422,4 @@
             transform: rotate(45deg);
         }
     }
-
 }

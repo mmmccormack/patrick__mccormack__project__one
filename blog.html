@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@700&display=swap" rel="stylesheet"> 
     <!-- add fontawesome  -->
     <script src='https://kit.fontawesome.com/fbc2e650be.js'></script>
-    <title>Delicious</title>
+    <title>Delicious - Blog</title>
 </head>
 <body>
     <!-- begin header -->
@@ -28,16 +28,23 @@
                     <li class="nav__link"><a href="blog.html">blog</a></li>
                     <li class="nav__link"><a href="#">shop</a></li>
                     <li class="nav__link"><a href="contact.html">contact</a></li>
-                    <li class="nav__link"><a href="#"><i aria-hidden="true" class="fas fa-shopping-bag" title="View shopping bag"></i><span class="sr-only">View shopping bag</span></a></li>
+                    <li class="nav__link">
+                        <div class="shopping__bag">
+                            <a href="#"><i aria-hidden="true" class="fas fa-shopping-bag" title="View shopping bag"></i><span class="sr-only">View shopping bag</span></a>
+                            <div class="number__two">2</div>
+                        </div>
+                    </li>
                     <li class="nav__link"><a href="#"><i aria-hidden="true" class="fas fa-search" title="Search"></i><span class="sr-only">Search</span></a></li>
                 </ul>
-                <button class="nav__burger"><a href="#"><i class="fas fa-bars"></i></a></button>
+                <button class="nav__burger"><i aria-hidden="true" class="fas fa-bars"></i><span class="sr-only">Menu</span></button>
             </nav>
         </div>
     </header>
     <!-- begin main section -->
     <main>
+        <!-- begin content wrapper for page -->
         <div class="wrapper__blog">
+            <!-- begin first section with heading, blog post text, a list with sharing icons, and a small writeup about the author with their photo to the left of the writeup. -->
             <section class="blog__post">
 
                 <h2 class="blog__title">Pineapple Chicken</h2>
@@ -60,7 +67,7 @@
                 <hr class="divider__blog" />
                 <div class="blog__author">
                     <div class="author__image">
-                        <img src="./assets/blog/blog-2.jpeg" alt="A person with long wavy blond hair in a white tank top runs her hands through her hair.">
+                        <img src="./assets/blog/blog-2.jpeg" alt="A person with long wavy blond hair in a white tank top runs their hands through their hair.">
                     </div>
                     <div class="author__bio">
                         <h6>Sally Lucas</h6>
@@ -70,39 +77,41 @@
                 </div>
                 <hr class="divider__blog" />
             </section>
+            <!-- begin section of related posts - three containers each containing  a photo and text beneath with post information that links to another article.-->
             <section class="blog__related">
                 <h6>Related Posts</h6>
                 <div class="related__posts">
                     <div class="post__descrip">
                         <div class="post__image">
-                            <img src="./assets/blog/blog-3.jpeg" alt="A tall pink cake with candles on the top and a small floral arrangement on the side sits on a curved cake tray.">
+                            <a href="#"><img src="./assets/blog/blog-3.jpeg" alt="A tall pink cake with candles on the top and a small floral arrangement on the side sits on a curved cake tray."></a>
                         </div>
                         <div class="post__info">
-                            <h5>How to bake the perfect cake</h5>
-                            <p class="post__date">July 11, 2018 | by <span class="poster">Admin</span> | in <span class="poster">Recipes</span></p>
+                            <a href="#"><h5>How to bake the perfect cake</h5>
+                            <p class="post__date">July 11, 2018 | by <span class="poster">Admin</span> | in <span class="poster">Recipes</span></p></a>
                         </div>
                     </div>
                     <div class="post__descrip">
                         <div class="post__image">
-                            <img src="./assets/blog/blog-4.jpeg" alt="Three cupcakes are wrapped in gold foil with floral icing and edible flowers on top.">
+                            <a href="#"><img src="./assets/blog/blog-4.jpeg" alt="Three cupcakes are wrapped in gold foil with floral icing and edible flowers on top."></a>
                         </div>
                         <div class="post__info">
-                            <h5>Floral cupcakes</h5>
-                            <p class="post__date">July 19, 2018 | by <span class="poster">Admin</span> | in <span class="poster">Recipes</span></p>
+                            <a href="#"><h5>Floral cupcakes</h5>
+                            <p class="post__date">July 19, 2018 | by <span class="poster">Admin</span> | in <span class="poster">Recipes</span></p></a>
                         </div>
                     </div>
                     <div class="post__descrip">
                         <div class="post__image">
-                            <img src="./assets/blog/blog-5.jpeg" alt="A hand garnishes a salad of radishes and onions with chives.">
+                            <a href="#"><img src="./assets/blog/blog-5.jpeg" alt="A hand garnishes a salad of radishes and onions with chives."></a>
                         </div>
                         <div class="post__info">
-                            <h5>Single post with image</h5>
-                            <p class="post__date">July 22, 2018 | by <span class="poster">Admin</span> | in <span class="poster">Recipes</span></p>
+                            <a href="#"><h5>Single post with image</h5>
+                            <p class="post__date">July 22, 2018 | by <span class="poster">Admin</span> | in <span class="poster">Recipes</span></p></a>
                         </div>
                     </div>
                 </div>
                 <hr class="divider__blog" />
             </section>
+            <!-- Begin comments section, containing two blocks that each contain a photo of the commenter, their comment, and the date posted. -->
             <section class="blog__comments">
                 <h6>02 Comments</h6>
                 <div class="comment__entry">
@@ -126,6 +135,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Begin comment submission form section - three text boxes for name, email, and website, the first two of which are required fields, followed by a textarea to write a comment, and a button to submit the form beneath it.  -->
             <section class="comment__submit">
                 <h6>Leave a comment</h6>
                 <p class="text__accent">Your email will not be published. Required fields are marked *</p>
@@ -148,12 +158,9 @@
                         </div>
                     </form>
                 </div>
-
             </section>
         </div>
     </main>
-
-
     <!-- begin footer -->
     <footer class="main__footer">
         <!-- begin footer wrapper -->
@@ -164,12 +171,12 @@
                     <li class="body__text">Soko radicchio bunya nuts gram dulse</li> 
                     <li class="body__text">silver best parsnip napa cabbage lotus</li>
                     <li class="body__text">root sea lettuce brussels sprout cabbage.</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">A delicious restaurant</li>
                     <li class="body__text">Toronto, Ontario</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">yum@food.com</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">+1 234 567 8910</li>
                 </ul>
             </div>
@@ -177,15 +184,15 @@
                 <h4 class="footer__heading">Recent Posts</h4>
                 <ul class="footer__posts">
                     <li class="body__text">Beetroot water spinach okra water</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Chestnut ricebean pea catsear courgette</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Summer purslane spinach arugula pea</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Tatsol aubergine spring onion bush</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Tomato kale radicchio turnip chicory</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Salsify pea sprouts fava bean</li>
                 </ul>
             </div>
@@ -196,14 +203,14 @@
                 </p>
                 <div class="footer__form">
                     <!-- begin subscribe form -->
-                    <form action="#" method="#">
-                        <!-- SR-ONLY LABEL -->
-                        <input type="email" placeholder="Enter your email">
+                    <form action="#" method="#" name="subscribe__form">
+                        <label for="subscribe__email" class="sr-only">Provide your email address</label>
+                        <input type="email" placeholder="Enter your email" name="subscribe__email" id="sr-only" required>
                         <button class="submit" type="submit">&#8594;</button>
                     </form>
                 </div>
                 <div class="footer__social">
-                    <hr />
+                    <hr class="divider__footer" />
                     <ul class="social__list">
                         <li class="social__link"><i aria-hidden="true" class="fab fa-facebook-f" title="Check out our Facebook page"></i><span class="sr-only">Check out our Facebook page</span></li>
                         <li class="social__link"><i aria-hidden="true" class="fab fa-twitter" title="Check out our Twitter page"></i><span class="sr-only">Check out our Twitter page</span></li>
@@ -216,7 +223,5 @@
     <div class="copyright">
         <p>Copyrights &copy; 2015 by <span class="polar">Polar</span>. All Rights Reserved.</p>
     </div>
-
-
 </body>
 </html>

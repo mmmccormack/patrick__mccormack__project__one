@@ -3,6 +3,7 @@
     &__first,
     &__second {
         display: flex;
+        align-items: center;
     }
 
     &__third {
@@ -68,14 +69,15 @@
 .flex__menu {
     display: flex;
     justify-content: center;
-    margin: 2% 10% 10% 18%;
 
     &__left {
-        margin-right: 25px;
+        margin: 0 45px;
+        width: calc(40% - 25px);
     }
 
     &__right {
         margin-left: 25px;
+        width: calc(40% - 25px);
     }
 }
 
@@ -111,7 +113,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .image {

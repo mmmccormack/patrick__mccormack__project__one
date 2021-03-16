@@ -28,20 +28,24 @@
                     <li class="nav__link"><a href="blog.html">blog</a></li>
                     <li class="nav__link"><a href="#">shop</a></li>
                     <li class="nav__link"><a href="contact.html">contact</a></li>
-                    <li class="nav__link"><a href="#"><i aria-hidden="true" class="fas fa-shopping-bag" title="View shopping bag"></i><span class="sr-only">View shopping bag</span></a></li>
+                    <li class="nav__link">
+                        <div class="shopping__bag">
+                            <a href="#"><i aria-hidden="true" class="fas fa-shopping-bag" title="View shopping bag"></i><span class="sr-only">View shopping bag</span></a>
+                            <div class="number__two">2</div>
+                        </div>
+                    </li>
                     <li class="nav__link"><a href="#"><i aria-hidden="true" class="fas fa-search" title="Search"></i><span class="sr-only">Search</span></a></li>
                 </ul>
-                <button class="nav__burger"><a href="#"><i class="fas fa-bars"></i></a></button>
+                <button class="nav__burger"><i aria-hidden="true" class="fas fa-bars"></i><span class="sr-only">Menu</span></button>
             </nav>
-
         </div>
     </header>
     <!-- begin main section -->
     <main>
-        <!-- begin first content section -->
+        <!-- begin first content section with headline, text, and button across from a photo-->
         <section class="section__first">
             <div class="image__first">
-                <img src="./assets/home/home-2.jpeg" alt="A head of read leaf lettuce is in a ceramic dish, with small leaves surrounding it.">
+                <img src="./assets/home/home-2.jpeg" alt="A head of read leaf lettuce is in a ceramic dish, with smaller leaves surrounding it.">
             </div>
             <div class="content__first">
                 <div class="content__wrapper">
@@ -52,12 +56,11 @@
                 </div>
             </div>
         </section>
-        <!-- begin second content section -->
+        <!-- begin second content section, with a photo next to a group of menu listings each with an icon, a heading, and text.-->
         <section class="section__second">
             <div class="image__second">
                 <img src="./assets/home/home-3.jpeg" alt="A taco filled with cucumber, cilantro, and rare beef is propped up by lime slices and a tomatillo.">
             </div>
-
             <div class="content__second">
                 <div class="flex__menu">
                     <div class="flex__menu__left">
@@ -98,7 +101,7 @@
                 </div>
             </div>
         </section>
-        <!-- begin third content section -->
+        <!-- begin third content section, with two images (one laid over the top right corner of another) with a heading and text below it. -->
         <section class="section__third">
             <!-- begin content wrapper -->
             <div class="flex__third">
@@ -107,15 +110,15 @@
                     <img class="image__base" src="./assets/home/home-4.jpeg" alt="Several wooden chairs and tables are seen in an empty restaurant.">
                 </div>
                 <div class="content__third">
-                <h2 class="heading__second">Our Restaurants</h2>
-                <hr class="divider__green" />
-                <p class="text__light">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                    <h2 class="heading__second">Our Restaurants</h2>
+                    <hr class="divider__green" />
+                    <p class="text__light">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
                 </div>
             </div>
         </section>
-        <!-- begin gallery section -->
+        <!-- begin gallery section, with 6 images shown in a 2x3 grid. -->
         <section class="section__gallery">
-            <!-- begin content wrapper -->
+            <!-- begin grid gallery -->
             <div class="grid__gallery">
                 <div class="image__gallery">
                     <img src="./assets/home/home-5.jpeg" alt="A fresh pesto salad with beans, pine nuts, tomatoes, and edible flowers is on a plate.">
@@ -130,14 +133,14 @@
                     <img src="./assets/home/home-8.jpeg" alt="A frosted cake with a small floral arrangement on top.">
                 </div>
                 <div class="image__gallery">
-                    <img src="./assets/home/home-9.jpeg" alt="Some blueberries cookies lie on paper next to a bowl of blueberries and a couple of flowers.">
+                    <img src="./assets/home/home-9.jpeg" alt="Some blueberry cookies lie on parchment paper next to a bowl of blueberries and a couple of flowers.">
                 </div>
                 <div class="image__gallery">
                     <img src="./assets/home/home-10.jpeg" alt="A bowl of tzatziki with a spoon dipped in it.">
                 </div>
             </div>
         </section>
-        <!-- begin blockquote section -->
+        <!-- begin blockquote section, with large block of text below a heading, flanked at the top left and bottom right by large quotation marks. Two chevron icons are beneath to navigate the user through other quotes.-->
         <section class="section__blockquote">
             <!-- begin content wrapper -->
             <div class="content__wrapper">
@@ -169,12 +172,12 @@
                     <li class="body__text">Soko radicchio bunya nuts gram dulse</li> 
                     <li class="body__text">silver best parsnip napa cabbage lotus</li>
                     <li class="body__text">root sea lettuce brussels sprout cabbage.</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">A delicious restaurant</li>
                     <li class="body__text">Toronto, Ontario</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">yum@food.com</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">+1 234 567 8910</li>
                 </ul>
             </div>
@@ -182,15 +185,15 @@
                 <h4 class="footer__heading">Recent Posts</h4>
                 <ul class="footer__posts">
                     <li class="body__text">Beetroot water spinach okra water</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Chestnut ricebean pea catsear courgette</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Summer purslane spinach arugula pea</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Tatsol aubergine spring onion bush</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Tomato kale radicchio turnip chicory</li>
-                    <li class="divider__footer"><hr /></li>
+                    <li><hr class="divider__footer" /></li>
                     <li class="body__text">Salsify pea sprouts fava bean</li>
                 </ul>
             </div>
@@ -201,21 +204,18 @@
                 </p>
                 <div class="footer__form">
                     <!-- begin subscribe form -->
-                    <form action="#" method="#">
-                        <!-- SR-ONLY LABEL -->
-                        <input type="email" placeholder="Enter your email">
+                    <form action="#" method="#" name="subscribe__form">
+                        <label for="subscribe__email" class="sr-only">Provide your email address</label>
+                        <input type="email" placeholder="Enter your email" name="subscribe__email" id="sr-only" required>
                         <button class="submit" type="submit">&#8594;</button>
                     </form>
                 </div>
                 <div class="footer__social">
-                    <hr />
+                    <hr class="divider__footer" />
                     <ul class="social__list">
                         <li class="social__link"><i aria-hidden="true" class="fab fa-facebook-f" title="Check out our Facebook page"></i><span class="sr-only">Check out our Facebook page</span></li>
                         <li class="social__link"><i aria-hidden="true" class="fab fa-twitter" title="Check out our Twitter page"></i><span class="sr-only">Check out our Twitter page</span></li>
                         <li class="social__link"><i aria-hidden="true" class="fab fa-instagram" title="Check out our Instagram page"></i><span class="sr-only">Check out our Instagram page</span></li>
-
-                        
-
                     </ul>
                 </div>
             </div> 
@@ -224,7 +224,5 @@
     <div class="copyright">
         <p>Copyrights &copy; 2015 by <span class="polar">Polar</span>. All Rights Reserved.</p>
     </div>
-  
-
 </body>
 </html>

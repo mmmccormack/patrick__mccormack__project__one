@@ -1,11 +1,9 @@
-.wrapper {
-    
-    &__blog {
-        width: 70%;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+.wrapper__blog {
+    width: 70%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
 
 .blog {
 
@@ -73,7 +71,11 @@
         width: calc((100% / 3) - 20px);
     }
 
+    &__info a {
+        text-decoration: none;
+    }
 }
+
 
 .comment {
 
@@ -138,7 +140,6 @@
             @include lora(0.6rem, 20);
             letter-spacing: 0.3px;
         }
-
     }
 }
 
