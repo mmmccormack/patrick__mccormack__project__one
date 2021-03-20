@@ -9,7 +9,7 @@ burgerMenu.addEventListener('click', function(){
     navList.classList.toggle('nav__list');
 });
 
-// after a little Stack Overflow, I created this event in case the user shrinks their browser and then expands it while the burger menu is active, so the burger menu will disappear and the original header nav will reappear.
+// after a little Stack Overflowing, I created this event in case the user shrinks their browser window and then expands it while the burger menu is active, so the burger menu will disappear and the original header nav will reappear.
 window.addEventListener('resize', function(){
     let pageWidth = document.documentElement.clientWidth + 15;
     if (pageWidth == 640) {
@@ -27,7 +27,6 @@ let leftQuote = false;
 let rightQuote = false;
 
 const quotes = ["Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate, a, nostrum doloremque maxime obcaecati soluta ab id sapiente maiores fugit tempore neque accusamus illum voluptates molestias. Ad, commodi labore.", "Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion zucchini burdock yarrow chickpea dandelion.", "I can see by what you carry that you come from Barrytown. Learn to work the saxaphone, and I play just what I feel. Drink scotch whisky all night long and die behind the wheel. So won't you smile for the camera? I know they're gonna love it."];
-
 
 // if left button is clicked, cycle to the next quote. If there is no other quote to cycle left to, disable the chevron button.
 leftButton.addEventListener('click', function(){

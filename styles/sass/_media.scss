@@ -177,7 +177,7 @@
 
         & blockquote::after {
             font-size: 2rem;
-            bottom: 60px;
+            bottom: 80px;
             right: -30px;
         }
     }
@@ -214,6 +214,11 @@
     .copyright {
         text-align: center;
     }
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    padding: 0;
 }
 
 @media (max-width: 440px) {

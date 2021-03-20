@@ -594,13 +594,14 @@ footer {
 button.quote {
   background-color: transparent;
   border: none;
+  padding: 0 8px;
 }
 
 .fa-chevron-left,
 .fa-chevron-right {
   color: #FFF;
-  font-size: 1.2rem;
-  padding: 0 20px;
+  font-size: 2rem;
+  padding: 0 10px;
 }
 
 .fa-chevron-left:hover,
@@ -608,8 +609,7 @@ button.quote {
 .fa-chevron-left:focus,
 .fa-chevron-right:focus {
   color: #ecf5c5;
-  font-size: 1.2rem;
-  padding: 0 20px;
+  cursor: pointer;
 }
 
 .nav__display {
@@ -648,57 +648,50 @@ button.quote {
 }
 .disabled {
   color: #ecf5c5;
-  font-size: 1.2rem;
-  padding: 0 20px;
 }
 
 .active {
   color: #FFF;
-  padding: 0 20px;
-  font-size: 1.8rem;
   -webkit-animation: grow 1s ease;
           animation: grow 1s ease;
+  font-size: 125%;
 }
 
 .inactive {
   color: #ecf5c5;
-  font-size: 1.2rem;
-  padding: 0 20px;
-  -webkit-animation: shrink 1s ease;
-          animation: shrink 1s ease;
 }
 
 @-webkit-keyframes grow {
   0% {
-    font-size: 1.2rem;
+    font-size: 100%;
   }
   100% {
-    font-size: 1.8rem;
+    font-size: 125%;
   }
 }
 
 @keyframes grow {
   0% {
-    font-size: 1.2rem;
+    font-size: 100%;
   }
   100% {
-    font-size: 1.8rem;
+    font-size: 125%;
   }
 }
 @-webkit-keyframes shrink {
   0% {
-    font-size: 1.8rem;
+    font-size: 125%;
   }
   100% {
-    font-size: 1.2rem;
+    font-size: 100%;
   }
 }
 @keyframes shrink {
   0% {
-    font-size: 1.8rem;
+    font-size: 125%;
   }
   100% {
-    font-size: 1.2rem;
+    font-size: 100%;
   }
 }
 .wrapper__blog {
@@ -1208,7 +1201,7 @@ button.quote {
   }
   .section__blockquote blockquote::after {
     font-size: 2rem;
-    bottom: 60px;
+    bottom: 80px;
     right: -30px;
   }
 
@@ -1245,6 +1238,11 @@ button.quote {
     text-align: center;
   }
 }
+.fa-chevron-left,
+.fa-chevron-right {
+  padding: 0;
+}
+
 @media (max-width: 440px) {
   .image__stamp {
     top: -35px;

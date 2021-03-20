@@ -155,13 +155,14 @@
 button.quote {
     background-color: transparent;
     border: none;
+    padding: 0 8px;
 }
 
 .fa-chevron-left,
 .fa-chevron-right {
     color: #FFF;
-    font-size: 1.2rem;
-    padding: 0 20px;
+    font-size: 2rem;
+    padding: 0 10px;
 }
 
 .fa-chevron-left:hover,
@@ -169,8 +170,7 @@ button.quote {
 .fa-chevron-left:focus,
 .fa-chevron-right:focus {
     color: lighten($lightgreen, 10);
-    font-size: 1.2rem;
-    padding: 0 20px;
+    cursor: pointer;
 }
 
 // adding JS element classes
@@ -209,40 +209,36 @@ button.quote {
 
 .disabled {
     color: lighten($lightgreen, 10);
-    font-size: 1.2rem;
-    padding: 0 20px;
 }
 
 .active {
     color: #FFF;
-    padding: 0 20px;
-    font-size: 1.8rem;
     animation: grow 1s ease;
+    font-size: 125%
 }
 
 .inactive {
     color: lighten($lightgreen, 10);
-    font-size: 1.2rem;
-    padding: 0 20px;
-    animation: shrink 1s ease;
+    // font-size: 100%;
+    // animation: shrink 1s ease;
 }
 
 @keyframes grow {
     0% {
-        font-size: 1.2rem;
+        font-size: 100%;
     }
 
     100% {
-        font-size: 1.8rem;
+        font-size: 125%;
     }
 }
 
 @keyframes shrink {
     0% {
-        font-size: 1.8rem;
+        font-size: 125%;
     }
 
     100% {
-        font-size: 1.2rem;
+        font-size: 100%;
     }
 }

@@ -21,7 +21,7 @@
             <nav class="nav__header">
                 <h1>delicious</h1>
                 <ul class="nav__list">
-                    <li class="nav__link"><a href="index.hthml">home</a></li>
+                    <li class="nav__link"><a href="index.html">home</a></li>
                     <li class="nav__link"><a href="#">about</a></li>
                     <li class="nav__link"><a href="#">recipes</a></li>
                     <li class="nav__link"><a href="#">nutrition</a></li>
@@ -134,6 +134,7 @@
                         <p class="comment__date">Jul 17, 2015 at 15 hours ago</p>
                     </div>
                 </div>
+                
             </section>
             <!-- Begin comment submission form section - three text boxes for name, email, and website, the first two of which are required fields, followed by a textarea to write a comment, and a button to submit the form beneath it.  -->
             <section class="comment__submit">
@@ -143,18 +144,18 @@
                     <form action="#" method="#" name="comment__form">
                         <div class="comment__field">
                             <label for="comment__name" class="sr-only">Provide your name</label>
-                            <input type="text" placeholder="Name *" name="comment__name" id="sr-only" required>
+                            <input class="user__name" type="text" placeholder="Name *" name="comment__name" id="sr-only" required>
                             <label for="comment__email" class="sr-only">Provide your email address</label>
-                            <input type="email" placeholder="Email *" name="comment__email" id="sr-only" required>
+                            <input class="user__email" type="email" placeholder="Email *" name="comment__email" id="sr-only" required>
                             <label for="comment__website" class="sr-only">Provide your Website</label>
-                            <input type="text" placeholder="Your Website" name="comment__website" id="sr-only">
+                            <input class="user__site" type="text" placeholder="Your Website" name="comment__website" id="sr-only">
                         </div>
                         <div class="comment__text">
                             <label for="comment__message" class="sr-only">Provide a short comment about this post</label>
-                            <textarea name="comment__message" id="sr-only" placeholder="Comment"></textarea>
+                            <textarea class="user__comment" name="comment__message" id="sr-only" placeholder="Comment *" required></textarea>
                         </div>
                         <div class="comment__text">
-                            <button type="submit" class="deep__green">Submit Comment</button>
+                            <button class="deep__green submit__comment">Submit Comment</button>
                         </div>
                     </form>
                 </div>
@@ -206,7 +207,7 @@
                     <form action="#" method="#" name="subscribe__form">
                         <label for="subscribe__email" class="sr-only">Provide your email address</label>
                         <input type="email" placeholder="Enter your email" name="subscribe__email" id="sr-only" required>
-                        <button class="submit" type="submit">&#8594;</button>
+                        <button class="submit">&#8594;</button>
                     </form>
                 </div>
                 <div class="footer__social">
@@ -223,5 +224,6 @@
     <div class="copyright">
         <p>Copyrights &copy; 2015 by <span class="polar">Polar</span>. All Rights Reserved.</p>
     </div>
+    <script src="script__blog.js"></script>
 </body>
 </html>
