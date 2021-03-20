@@ -152,7 +152,7 @@
     padding: 25px 0 50px 0;
 }
 
-button.chevron {
+button.quote {
     background-color: transparent;
     border: none;
 }
@@ -171,4 +171,78 @@ button.chevron {
     color: lighten($lightgreen, 10);
     font-size: 1.2rem;
     padding: 0 20px;
+}
+
+// adding JS element classes
+
+// burger menu
+.nav {
+
+    &__display {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        list-style: none;
+        text-align: right;
+        background: rgba(255,255,255,0.7);
+        font-size: 1.3rem;
+        width: 40%;
+        letter-spacing: 1.1px;
+        padding: 20px 0;
+        margin-top: 30px;
+        animation: slide 1s ease;
+    }
+}
+
+@keyframes slide {
+    0% {
+        right: -200px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+// quote carousel
+
+.disabled {
+    color: lighten($lightgreen, 10);
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+.active {
+    color: #FFF;
+    padding: 0 20px;
+    font-size: 1.8rem;
+    animation: grow 1s ease;
+}
+
+.inactive {
+    color: lighten($lightgreen, 10);
+    font-size: 1.2rem;
+    padding: 0 20px;
+    animation: shrink 1s ease;
+}
+
+@keyframes grow {
+    0% {
+        font-size: 1.2rem;
+    }
+
+    100% {
+        font-size: 1.8rem;
+    }
+}
+
+@keyframes shrink {
+    0% {
+        font-size: 1.8rem;
+    }
+
+    100% {
+        font-size: 1.2rem;
+    }
 }

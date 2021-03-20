@@ -168,23 +168,21 @@
 
     .section__blockquote {
         padding: 50px 0;
+
+        & blockquote::before {
+            font-size: 2rem;
+            top: 50px;
+            left: -30px;
+        }
+
+        & blockquote::after {
+            font-size: 2rem;
+            bottom: 60px;
+            right: -30px;
+        }
     }
 
-    .text__quote {
-        font-size: 0.6rem;
-        line-height: 24px;
-    }
-
-    blockquote::before{
-        font-size: 2rem;
-        left: -30px;
-    }
-    blockquote::after {
-        font-size: 2rem;
-        right: -30px;
-    }
-
-    .text__quote {
+    p.text__quote {
         font-size: 0.6rem;
         line-height: 18px;
     }

@@ -250,6 +250,7 @@ html {
 
 html {
   font-size: 125%;
+  overflow-x: hidden;
 }
 
 .header__home {
@@ -326,7 +327,7 @@ html {
   font-size: 0.5rem;
   color: #2e2e2e;
   text-transform: uppercase;
-  width: 30%;
+  width: 12px;
   text-align: center;
 }
 
@@ -590,7 +591,7 @@ footer {
   padding: 25px 0 50px 0;
 }
 
-button.chevron {
+button.quote {
   background-color: transparent;
   border: none;
 }
@@ -611,6 +612,95 @@ button.chevron {
   padding: 0 20px;
 }
 
+.nav__display {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  list-style: none;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  width: 40%;
+  letter-spacing: 1.1px;
+  padding: 20px 0;
+  margin-top: 30px;
+  -webkit-animation: slide 1s ease;
+          animation: slide 1s ease;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.disabled {
+  color: #ecf5c5;
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+.active {
+  color: #FFF;
+  padding: 0 20px;
+  font-size: 1.8rem;
+  -webkit-animation: grow 1s ease;
+          animation: grow 1s ease;
+}
+
+.inactive {
+  color: #ecf5c5;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  -webkit-animation: shrink 1s ease;
+          animation: shrink 1s ease;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    font-size: 1.2rem;
+  }
+  100% {
+    font-size: 1.8rem;
+  }
+}
+
+@keyframes grow {
+  0% {
+    font-size: 1.2rem;
+  }
+  100% {
+    font-size: 1.8rem;
+  }
+}
+@-webkit-keyframes shrink {
+  0% {
+    font-size: 1.8rem;
+  }
+  100% {
+    font-size: 1.2rem;
+  }
+}
+@keyframes shrink {
+  0% {
+    font-size: 1.8rem;
+  }
+  100% {
+    font-size: 1.2rem;
+  }
+}
 .wrapper__blog {
   width: 70%;
   max-width: 1400px;
@@ -1111,23 +1201,18 @@ button.chevron {
   .section__blockquote {
     padding: 50px 0;
   }
-
-  .text__quote {
-    font-size: 0.6rem;
-    line-height: 24px;
-  }
-
-  blockquote::before {
+  .section__blockquote blockquote::before {
     font-size: 2rem;
+    top: 50px;
     left: -30px;
   }
-
-  blockquote::after {
+  .section__blockquote blockquote::after {
     font-size: 2rem;
+    bottom: 60px;
     right: -30px;
   }
 
-  .text__quote {
+  p.text__quote {
     font-size: 0.6rem;
     line-height: 18px;
   }
