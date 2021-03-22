@@ -591,6 +591,11 @@ footer {
   padding: 25px 0 50px 0;
 }
 
+.quote__one,
+.quote__three {
+  display: none;
+}
+
 button.quote {
   background-color: transparent;
   border: none;
@@ -666,6 +671,28 @@ button.quote {
   color: #ecf5c5;
 }
 
+.onscreen {
+  -webkit-animation: fadein 1s ease;
+          animation: fadein 1s ease;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes grow {
   0% {
     font-size: 100%;
@@ -674,7 +701,6 @@ button.quote {
     font-size: 125%;
   }
 }
-
 @keyframes grow {
   0% {
     font-size: 100%;
