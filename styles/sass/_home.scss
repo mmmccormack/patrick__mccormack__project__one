@@ -152,6 +152,11 @@
     padding: 25px 0 50px 0;
 }
 
+.quote__one,
+.quote__three {
+    display: none;
+}
+
 button.quote {
     background-color: transparent;
     border: none;
@@ -226,6 +231,20 @@ button.quote {
     color: lighten($lightgreen, 10);
     // font-size: 100%;
     // animation: shrink 1s ease;
+}
+
+.onscreen {
+    animation: fadein 1s ease;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes grow {
