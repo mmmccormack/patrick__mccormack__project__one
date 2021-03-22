@@ -3,7 +3,9 @@ const carousel = {};
 
 carousel.leftButton = document.querySelector('.left');
 carousel.rightButton = document.querySelector('.right');
-carousel.quoteContainer = document.querySelector('.text__quote');
+carousel.containerOne = document.querySelector('.quote__one');
+carousel.containerTwo = document.querySelector('.quote__two');
+carousel.containerThree = document.querySelector('.quote__three');
 carousel.quoteOne = document.querySelector('.one');
 carousel.quoteTwo = document.querySelector('.two');
 carousel.quoteThree = document.querySelector('.three');
@@ -12,13 +14,15 @@ carousel.arrowRight = document.querySelector('.fa-chevron-right');
 carousel.leftQuote = false;
 carousel.rightQuote = false;
 
-carousel.quotes = ["Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate, a, nostrum doloremque maxime obcaecati soluta ab id sapiente maiores fugit tempore neque accusamus illum voluptates molestias. Ad, commodi labore.", "Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean.", "I can see by what you carry that you come from Barrytown. Learn to work the saxaphone, and I play just what I feel. Drink scotch whisky all night long and die behind the wheel. So won't you smile for the camera? I know they're gonna love it."];
 
 // if left button is clicked, cycle to the next quote. If there is no other quote to cycle left to, disable the chevron button.
 carousel.leftButton.addEventListener('click', function(){
 //    cycle from center quote to far left quote
     if (carousel.leftQuote === false && carousel.rightQuote === false){
-        carousel.quoteContainer.textContent = carousel.quotes[0];
+        carousel.containerOne.style.display = 'block';
+        carousel.containerOne.classList.toggle("onscreen");
+        carousel.containerTwo.classList.toggle("onscreen");
+        carousel.containerTwo.style.display = 'none';
         carousel.leftQuote = true;
         carousel.arrowLeft.classList.add('disabled');
         carousel.quoteOne.classList.toggle('active');
@@ -28,7 +32,10 @@ carousel.leftButton.addEventListener('click', function(){
     }
 //  cycle from far right quote to center quote
     if (carousel.leftQuote === false && carousel.rightQuote === true) {
-        carousel.quoteContainer.textContent = carousel.quotes[1];
+        carousel.containerTwo.style.display = 'block';
+        carousel.containerTwo.classList.toggle("onscreen");
+        carousel.containerThree.classList.toggle("onscreen");
+        carousel.containerThree.style.display = 'none';
         carousel.rightQuote = false;
         carousel.arrowRight.classList.remove('disabled');
         carousel.quoteTwo.classList.toggle('active');
@@ -41,7 +48,10 @@ carousel.leftButton.addEventListener('click', function(){
 carousel.rightButton.addEventListener('click', function(){
 //    cycle from center quote to far right quote
     if (carousel.leftQuote === false && carousel.rightQuote === false) {
-        carousel.quoteContainer.textContent = carousel.quotes[2];
+        carousel.containerThree.style.display = 'block';
+        carousel.containerThree.classList.toggle("onscreen");
+        carousel.containerTwo.classList.toggle("onscreen");
+        carousel.containerTwo.style.display = 'none';
         carousel.rightQuote = true;
         carousel.arrowRight.classList.add('disabled');
         carousel.quoteThree.classList.toggle('active');
@@ -51,7 +61,10 @@ carousel.rightButton.addEventListener('click', function(){
     }
     // cycle from far left quote to center quote
     if (carousel.leftQuote === true && carousel.rightQuote === false) {
-        carousel.quoteContainer.textContent = carousel.quotes[1];
+        carousel.containerOne.style.display = 'none';
+        carousel.containerOne.classList.toggle("onscreen");
+        carousel.containerTwo.classList.toggle("onscreen");
+        carousel.containerTwo.style.display = 'block';
         carousel.leftQuote = false;
         carousel.arrowLeft.classList.remove('disabled');
         carousel.quoteTwo.classList.toggle('active');
