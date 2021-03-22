@@ -211,6 +211,11 @@ button.quote {
     color: lighten($lightgreen, 10);
 }
 
+.disabled:hover,
+.disabled:focus {
+    cursor: auto;
+}
+
 .active {
     color: #FFF;
     animation: grow 1s ease;

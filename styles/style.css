@@ -650,6 +650,11 @@ button.quote {
   color: #ecf5c5;
 }
 
+.disabled:hover,
+.disabled:focus {
+  cursor: auto;
+}
+
 .active {
   color: #FFF;
   -webkit-animation: grow 1s ease;

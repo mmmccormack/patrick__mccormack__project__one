@@ -1,43 +1,23 @@
-// add hamburger menu functionality
-
-const burgerMenu = document.querySelector('.nav__burger');
-const navList = document.querySelector('.nav__list');
-
-// when burger menu is clicked, trigger burger display class
-burgerMenu.addEventListener('click', function(){
-    navList.classList.toggle('nav__display');
-    navList.classList.toggle('nav__list');
-});
-
-// after a little Stack Overflowing, I created this event in case the user shrinks their browser window and then expands it while the burger menu is active, so the burger menu will disappear and the original header nav will reappear.
-window.addEventListener('resize', function(){
-    let pageWidth = document.documentElement.clientWidth + 15;
-    if (pageWidth == 640) {
-        navList.classList.add('nav__list');
-        navList.classList.remove('nav__display');
-    }
-})
-
 // active blog comments in display - when user submits comment, it shows up right away underneath the previous one
-
+const post = {};
 // define variables for each form element
-const nameBox = document.querySelector('.user__name');
-const emailBox = document.querySelector('.user__email');
-const siteBox = document.querySelector('.user__site');
-const commentBox = document.querySelector('.user__comment');
-const submitButton = document.querySelector('.submit__comment');
+post.nameBox = document.querySelector('.user__name');
+post.emailBox = document.querySelector('.user__email');
+post.siteBox = document.querySelector('.user__site');
+post.commentBox = document.querySelector('.user__comment');
+post.submitButton = document.querySelector('.submit__comment');
 // define variable for container that will hold new comment entries
-const commentContainer = document.querySelector('.blog__comments');
+post.commentContainer = document.querySelector('.blog__comments');
 // define variable for date/time of when page is loaded
-const currentTime = new Date();
+post.currentTime = new Date();
 
 
 
-const postComment = function(name, site, comment) {
+post.postComment = function(name, site, comment) {
     // get current date and time to add to blog post
     const date = new Date();
     // This took a little time with MDN and a LOT of finagling, but the formula is the difference between the time when the page is loaded and the time of the comment divided by 1000 (to account for millisecond format), divided by 3600 (the number of seconds in an hour), and rounded down.
-    const postTime = Math.floor((Math.abs(currentTime - date) / 1000) / 3600);
+    const postTime = Math.floor((Math.abs(post.currentTime - date) / 1000) / 3600);
     // This is used to show the date of the comment in a shorter form.
     const formatDate = new Intl.DateTimeFormat('en-US', { 
         dateStyle: 'medium' 
@@ -61,30 +41,25 @@ const postComment = function(name, site, comment) {
     // add class to newly created div so it conforms to section and page styling
     commentEntry.classList.add('comment__entry');
     // add new div to existing section
-    commentContainer.appendChild(commentEntry);
+    post.commentContainer.appendChild(commentEntry);
     // clear contents of all input boxes in form
-    nameBox.value = "";
-    emailBox.value = "";
-    siteBox.value = "";
-    commentBox.value = "";
+    post.nameBox.value = "";
+    post.emailBox.value = "";
+    post.siteBox.value = "";
+    post.commentBox.value = "";
 
 }
 
 // when users presses button to submit form, the form information is collected and sent to the postComment function.
-submitButton.addEventListener('click', function(e) {
+post.submitButton.addEventListener('click', function(e) {
     e.preventDefault();
-    const userName = nameBox.value;
-    const userSite = siteBox.value;
-    const userComment = commentBox.value;
+    const userName = post.nameBox.value;
+    const userSite = post.siteBox.value;
+    const userComment = post.commentBox.value;
     // if the user does not enter a website, placeholder text will be inserted
     if (userSite === "") {
-        postComment(userName,"no website",userComment)
+        post.postComment(userName,"no website",userComment);
     } else {
-        postComment(userName,userSite,userComment);
+        post.postComment(userName,userSite,userComment);
     }
 });
-
-
-
-
-
