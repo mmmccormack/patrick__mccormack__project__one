@@ -13,8 +13,10 @@
     }
 
     &__contact {
-        height: 100vh;
-        background: center top / cover no-repeat url("./../assets/contact/contact-1.jpeg");
+        height: 50vh;
+        background-size: cover;
+        width: auto;
+        background-image: url("./../assets/contact/contact-1.jpeg");
     }
 }
 
@@ -46,7 +48,7 @@
 
     &__link a {
         text-transform: uppercase;
-        @include raleway(0.65rem, 0);
+        @include raleway(0.8rem, 0);
         padding: 0 15px;
         text-decoration: none;
     }

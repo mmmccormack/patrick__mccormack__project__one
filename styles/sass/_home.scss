@@ -72,12 +72,12 @@
 
     &__left {
         margin: 0 45px;
-        width: calc(40% - 25px);
+        width: 45%;
     }
 
     &__right {
         margin-left: 25px;
-        width: calc(40% - 25px);
+        width: 45%;
     }
 }
 
@@ -91,9 +91,9 @@
     &__feature i {
         position: absolute;
         top: 0;
-        left: -50px;
+        left: -32px;
         color: $primary;
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     &__feature h4 {
@@ -138,10 +138,13 @@
     padding-top: 20px;
 }
 
-.grid__gallery {
+.image__gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .content__quote {

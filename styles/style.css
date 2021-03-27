@@ -262,8 +262,10 @@ html {
   background: center top/cover no-repeat url("./../assets/blog/blog-1.jpeg");
 }
 .header__contact {
-  height: 100vh;
-  background: center top/cover no-repeat url("./../assets/contact/contact-1.jpeg");
+  height: 50vh;
+  background-size: cover;
+  width: auto;
+  background-image: url("./../assets/contact/contact-1.jpeg");
 }
 
 .wrapper__header {
@@ -296,7 +298,7 @@ html {
 .nav__link a {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: #2e2e2e;
   text-transform: uppercase;
   padding: 0 15px;
@@ -351,7 +353,7 @@ footer {
 }
 
 .footer__contact, .footer__blog, .footer__subscribe {
-  width: 25%;
+  width: 30%;
 }
 .footer__address, .footer__posts {
   list-style-position: inside;
@@ -515,11 +517,11 @@ footer {
 }
 .flex__menu__left {
   margin: 0 45px;
-  width: calc(40% - 25px);
+  width: 45%;
 }
 .flex__menu__right {
   margin-left: 25px;
-  width: calc(40% - 25px);
+  width: 45%;
 }
 
 .menu__feature {
@@ -528,9 +530,9 @@ footer {
 .menu__feature i {
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -32px;
   color: #2E2E2E;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .menu__feature h4 {
   margin-bottom: 0;
@@ -577,10 +579,13 @@ footer {
   padding-top: 20px;
 }
 
-.grid__gallery {
+.image__gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .content__quote {
@@ -1100,7 +1105,7 @@ button.quote {
 
 @media (max-width: 1280px) {
   .flex__menu {
-    margin-top: 12%;
+    margin-top: 10px;
   }
   .flex__menu__right {
     margin-left: 0;
@@ -1114,18 +1119,17 @@ button.quote {
     left: -25px;
   }
 
-  .text__light {
+  h4 + .text__light {
     line-height: 18px;
   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1100px) {
   .heading__first {
     font-size: 1rem;
   }
 
   .content__first .body__text {
-    font-size: 0.5rem;
-    padding-bottom: 0;
+    padding-bottom: 20px;
   }
 
   .body__text + .deep__green {
@@ -1157,9 +1161,13 @@ button.quote {
   .flex__menu__left, .flex__menu__right {
     width: 40%;
   }
+
+  h4 + .text__light {
+    line-height: 24px;
+  }
 }
 @media (max-width: 768px) {
-  .header__home, .header__contact, .header__blog {
+  .header__home, .header__blog {
     height: 60vh;
   }
 
@@ -1178,7 +1186,7 @@ button.quote {
   }
 }
 @media (max-width: 640px) {
-  .header__home, .header__contact, .header__blog {
+  .header__home, .header__blog {
     height: 40vh;
   }
 
@@ -1217,7 +1225,7 @@ button.quote {
     font-size: 1rem;
   }
 
-  .grid__gallery {
+  .image__gallery {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
@@ -1227,7 +1235,7 @@ button.quote {
   }
   .section__blockquote blockquote::before {
     font-size: 2rem;
-    top: 50px;
+    top: 40px;
     left: -30px;
   }
   .section__blockquote blockquote::after {
@@ -1237,7 +1245,7 @@ button.quote {
   }
 
   p.text__quote {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     line-height: 18px;
   }
 
@@ -1246,23 +1254,15 @@ button.quote {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .footer__contact, .footer__blog, .footer__subscribe {
     width: 70%;
-    text-align: center;
   }
 
   .divider__footer hr,
 .footer {
     width: 70%;
-  }
-
-  .body__text {
-    font-size: 0.6rem;
   }
 
   .copyright {
@@ -1275,9 +1275,29 @@ button.quote {
 }
 
 @media (max-width: 440px) {
+  p.body__text,
+p.text__light {
+    text-align: left;
+  }
+
+  .divider__green + .text__light {
+    width: 95%;
+  }
+
   .image__stamp {
     top: -35px;
     right: 75px;
+  }
+
+  .content__wrapper {
+    width: 100%;
+  }
+
+  .section__blockquote blockquote::before {
+    left: 5px;
+  }
+  .section__blockquote blockquote::after {
+    right: -5px;
   }
 }
 @media (max-width: 940px) {
@@ -1328,6 +1348,9 @@ button.quote {
   .contact__field input[type=text],
 .contact__field input[type=email] {
     margin: 10px auto;
+  }
+  .contact__flex {
+    text-align: left;
   }
   .contact__banner {
     height: 30vh;
@@ -1409,6 +1432,10 @@ button.quote {
   }
 }
 @media (max-width: 480px) {
+  .wrapper__blog {
+    width: 90%;
+  }
+
   .blog__post {
     margin-top: 50px;
   }
@@ -1472,7 +1499,7 @@ h3 {
 
 h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #2e2e2e;
   text-transform: uppercase;
   margin: 20px 0 5px 0;
@@ -1480,7 +1507,7 @@ h4 {
 
 h5 {
   font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #2e2e2e;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -1488,7 +1515,7 @@ h5 {
 
 h6 {
   font-family: "Raleway", sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: #2e2e2e;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -1496,7 +1523,7 @@ h6 {
 
 .body__text {
   font-family: "Lora", serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #7b7b7b;
   line-height: 20px;
   line-height: 24px;
@@ -1505,7 +1532,7 @@ h6 {
 
 .blog__text {
   font-family: "Lora", serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #7b7b7b;
   line-height: 20px;
   line-height: 24px;
@@ -1515,7 +1542,7 @@ h6 {
 
 .text__accent {
   font-family: "Lora", serif;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: #949494;
   line-height: 20px;
   font-style: italic;
@@ -1524,7 +1551,7 @@ h6 {
 
 .text__light {
   font-family: "Lora", serif;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   color: #949494;
   line-height: 20px;
   line-height: 24px;
@@ -1543,7 +1570,7 @@ h6 {
 
 .post__date {
   font-family: "Lora", serif;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   color: #949494;
   line-height: 20px;
   line-height: 24px;
@@ -1552,7 +1579,7 @@ h6 {
 
 .comment__date {
   font-family: "Raleway", sans-serif;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   color: #616161;
   text-transform: uppercase;
   text-transform: none;
@@ -1561,7 +1588,7 @@ h6 {
 
 span.title {
   font-family: "Raleway", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #616161;
   text-transform: uppercase;
   margin-right: 8px;
@@ -1569,7 +1596,7 @@ span.title {
 
 span.poster {
   font-family: "Raleway", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: #7b7b7b;
   text-transform: uppercase;
   text-transform: none;
@@ -1577,7 +1604,7 @@ span.poster {
 
 span.name {
   font-family: "Raleway", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #616161;
   text-transform: uppercase;
   text-transform: none;
@@ -1585,26 +1612,29 @@ span.name {
 
 span.hours {
   font-family: "Raleway", sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #616161;
   text-transform: uppercase;
 }
 
 .divider__green {
   border: 2px solid #64A604;
+  margin: 0 auto;
 }
 .divider__footer {
-  border-top: 2px solid #484848;
-  border-bottom: none;
+  border-top: none;
+  border-bottom: 1px solid #484848;
   border-left: none;
   border-right: none;
+  margin: 10px 0;
 }
 .divider__clear {
   border: none;
+  margin: 10px 0;
 }
 .divider__blog {
-  border-top: 2px solid #e1e1e1;
-  border-bottom: none;
+  border-top: none;
+  border-bottom: 2px solid #e1e1e1;
   border-left: none;
   border-right: none;
   margin: 30px 0;
@@ -1619,6 +1649,7 @@ span.hours {
   text-transform: uppercase;
   text-transform: uppercase;
   padding: 15px 30px;
+  text-decoration: none;
 }
 
 blockquote::before {

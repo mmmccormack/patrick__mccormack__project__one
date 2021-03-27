@@ -35,41 +35,41 @@ h3 {
 }
 
 h4 {
-    @include raleway(1rem, 0);
+    @include raleway(0.9rem, 0);
     margin: 20px 0 5px 0;
 }
 
 h5 {
-    @include raleway(0.8rem, 0);
+    @include raleway(1rem, 0);
     margin-bottom: 4px;
 }
 
 h6 {
-    @include raleway(0.7rem, 0);
+    @include raleway(1rem, 0);
     margin-bottom: 4px;
 }
 
 .body__text {
-    @include lora(0.7rem, 30);
+    @include lora(0.8rem, 30);
     line-height: 24px;
     letter-spacing: 0.3px;
 }
 
 .blog__text {
-    @include lora(0.7rem, 30);
+    @include lora(0.8rem, 30);
     line-height: 24px;
     letter-spacing: 0.3px;
     margin-bottom: 30px;
 }
 
 .text__accent {
-    @include lora(0.6rem, 40);
+    @include lora(0.8rem, 40);
     font-style: italic;
     margin-top: 0;
 }
 
 .text__light {
-    @include lora(0.5rem, 40);
+    @include lora(0.8rem, 40);
     line-height: 24px;
     letter-spacing: 0.3px;
 }
@@ -82,34 +82,34 @@ h6 {
 }
 
 .post__date {
-    @include lora(0.5rem, 40);
+    @include lora(0.8rem, 40);
     line-height: 24px;
     letter-spacing: 0.5px;
 }
 
 .comment__date {
-    @include raleway(0.5rem, 20);
+    @include raleway(0.8rem, 20);
     text-transform: none;
     letter-spacing: 0.4px;
 }
 
 span.title {
-    @include raleway(0.7rem, 20);
+    @include raleway(0.8rem, 20);
     margin-right: 8px;
 }
 
 span.poster {
-    @include raleway(0.6rem, 30);
+    @include raleway(0.8rem, 30);
     text-transform: none;
 }
 
 span.name {
-    @include raleway(0.7rem, 20);
+    @include raleway(0.8rem, 20);
     text-transform: none;
 }
 
 span.hours {
-    @include raleway(0.7rem, 20);
+    @include raleway(0.8rem, 20);
 }
 
 // miscellaneous styling (buttons, content dividers, blockquotes)
@@ -118,22 +118,25 @@ span.hours {
 
     &__green {
         border: 2px solid $deepgreen;
+        margin: 0 auto;
     }
 
     &__footer {
-        border-top: 2px solid lighten($primary, 10);
-        border-bottom: none;
+        border-top: none;
+        border-bottom: 1px solid lighten($primary, 10);
         border-left: none;
         border-right: none;
+        margin: 10px 0;
     }
 
     &__clear {
         border: none;
+        margin: 10px 0;
     }
 
     &__blog {
-        border-top: 2px solid lighten($primary, 70);
-        border-bottom: none;
+        border-top: none;
+        border-bottom: 2px solid lighten($primary, 70);
         border-left: none;
         border-right: none;
         margin: 30px 0;
@@ -147,6 +150,7 @@ span.hours {
     @include raleway(0.7rem, 100);
     text-transform: uppercase;
     padding: 15px 30px;
+    text-decoration: none;
 }
 
 blockquote::before {
